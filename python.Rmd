@@ -1,0 +1,111 @@
+---
+title: "Welcome to Python Workshop Series"
+output: 
+  html_document:
+    theme: lumen
+    highlight: tango
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+*Last updated 10/20/2017*
+
+***
+
+This site was set up to host the content taught during these sessions and are meant for students for reference or for self-study. It is split into the following sections: 
+
+  * Introduction to Python 
+  * Data Visualization 
+  * Machine Learning
+  * Office Hours & Optimization 
+  
+Stay tuned as we add additional sections!  
+
+&nbsp; 
+
+## Introduction to Python
+
+### What is Python?
+Python is a high-level, which means it's easier to read/write than machine code, computer language. It's a swiss army knife-like tool that is quick to deploy and can be used for all sorts of applications. 
+
+Just a quick laundry list of things I've used it for at work: 
+
+  * Crawling through a network folder constantly 
+  * Generating a report out of XLS and emailing it out to certain people
+
+### Installation
+
+Before we begin, we have to make sure you have Python installed on your machine. 
+
+> We will use version 2.7 for this entire series. There is a newer 3.X version available, which introduces new functions but **most** applications use Python 2.7.
+
+You can download Python 2.7 here: (https://www.python.org/downloads/release/python-2714/)
+
+You will need scroll down until they see Files and click to download the package for their system. If you have Mac OS X 10.6 or later, you will need to download the Mac OS X 64-bit/32-bit installer package. If you have Windows, they will need to download the Windows x86-64 MSI installer package.
+
+I recommend going through the Getting Started page as well. The wiki has a wealth of information if you ever get stuck on something:
+Python 2.x Wiki: https://docs.python.org/2.7/
+
+&nbsp;
+
+### Why Python?
+
+Clean syntax, powerful extensions and libraries (think of this as additional software upgrades). It's also super easy and iterative to use. Traditional programming languages require you to compile (translate) your code before running it, which takes extra time! 
+
+&nbsp;
+
+### Text Editors
+
+Software editors are often used to write code. They help highlight certain parts of code (SUPER useful), use smart indenting, and basically you should totally be using one and NOT Notepad/Textpad. They also contain super helpful menu commands for changing settings and running code previews. 
+
+There are a few online editors out there that you can try: 
+  
+  * [Jupyter Notebooks (recommended)](https://jupyter.org)  
+  * [Katacoda](https://www.katacoda.com/courses/python/playground) 
+  * [Codenvy](http://www.codenvy.com/)
+  * [Python Anywhere](https://www.pythonanywhere.com)
+  
+These are great for quick prototyping but aren't recommended for any serious application. 
+
+Offline editors: 
+  
+  * IDLE (default)
+  * [Atom (recommended)](https://atom.io)
+  * [Sublime](https://www.sublimetext.com)
+  * [Notepad++](https://notepad-plus-plus.org) 
+   
+We will use IDLE in class. There are a few really good offline ones out there (listed above) but it really comes down to personal preference. This really won't matter unless you are thinking about serious 
+
+&nbsp;
+
+### Getting comfortable with the environment
+
+Now that you have installed Python, let's dive in! Open up an IDLE session and let's get cranking. 
+
+There is a hierarchy for code:
+
+  * Programs are composed of modules
+  * Modules contain statements
+  * Statements contain expressions
+  * Expressions create and process objects
+    + Expressions are the founding blocks of code
+    
+Confused yet? Don't worry this look way easier in code. For the purposes of this session, we will only look at expressions and statements. Try typing the below into your IDLE and run it.
+
+```{python}
+print('Hello World')
+```
+
+In that above example, the object is 'Hello World'. The statement is print('Hello World'). Blocks of code that can be called again and again are modules, and a bunch of modules designed to do something is called a program. 
+
+To use another analogy, think about a bakery. You need your baking ingredients like flour, yeast, and water. These are your objects. By putting them into a mixer, you are using a pre-built machine that only does mixing, a statement. You can't use the mixer to do anything else but mix. It also takes certain things (like baking ingredients). If you try putting other things in there, the mixer won't mix. Similarly, if you try putting objects into a statement that it doesn't recognize it will give you an error. More on that later. 
+
+If you think about the entire process of baking a loaf of bread, you need to mix the ingredients, bake them in the oven, and let the loaf cool. This set of activities is repeated over and over again, and the process is the same the entire time. This would be a module, a collection of statements. 
+
+If we think about the act of running a bakery, like marketing, accounting, and sales, that would be like a program. It's a set of business activities (or coding modules) that are put together! Make sense? 
