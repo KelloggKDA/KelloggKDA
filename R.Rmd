@@ -34,3 +34,51 @@ Stay tuned as we add additional sections!
 
 ### Installation
 
+What is R and why do we care?
+
+Text-based
+Transparent, reproducible, editable workflows
+Lots of support online
+What does a program do and what is a function and what does the logic do?
+
+Good to show example and make interactive
+show win/accomplishment
+need problems & examples
+maybe marry to Excel to show understanding data
+Need to go through the environment (console vs editor), comments, and
+Explanation of head()
+Getting your window back
+Go through the logic of packages/library
+go through process of downloading new libraries
+go through process of loading a library
+When programs are done running (when console is done)
+Parameters for new libraries, how do you know how many it takes?
+Also, what does a data table mean in a parameter?
+One dude wants to get into actually programming for consulting
+Piping, go thru one step at a time
+Office hours for actual practice application of these problems
+Managing question flow for session
+Airline problem might be way too many functions for students to handle, maybe focus on five or six and really drill down into
+Rushing through these functions, need to really step through practice problems
+Regression & Visualization should really be its own session
+Explain that these sessions are meant for teaching code vs. working with professors to work out regression
+ggplot library documentation
+themed libraries
+install packages ‘ggridges’
+tidyverse library documentation
+Session to show what libraries can do, but not necessarily meant to get you to expert level. Have to do practice problems
+Regression
+dummy variables + fixed effects?
+O’Reilly & Visualization R e-book links
+Links to good R teaching sites
+
+
+## Example Problems
+
+```{r}
+library(nycflights13)
+
+head(flights)
+```
+
+
