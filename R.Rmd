@@ -72,13 +72,20 @@ dummy variables + fixed effects?
 O’Reilly & Visualization R e-book links
 Links to good R teaching sites
 
+&nbsp; 
 
 ## Example Problems
+
+### NYC Flight Information
+
+Let's take a look at a sample dataset containing flight information. We'll be using the "nycflights13" library so go ahead and make sure that's installed.
 
 ```{r}
 library(nycflights13)
 
 head(flights)
 ```
+
+Generally it's good practice to do a quick sanity check whenever you have a new dataset. In this case, you can use head(flights) to check out the top 10 rows of this dataset OR you can go ahead and click into the package in the Environment tab and select the flights dataset. Is it loading?
 
 
