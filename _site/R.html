@@ -333,11 +333,11 @@ div.tocify {
 </div>
 
 
-<p><em>Last updated 10/20/2017</em></p>
+<p><em>Last updated 10/24/2017</em></p>
 <hr />
 <p>This site was set up to host the content taught during these sessions and are meant for students for reference or for self-study. It is split into different sessions:</p>
 <ul>
-<li>Installation and setup</li>
+<li>Installation</li>
 <li>Importing data</li>
 <li>Data cleansing</li>
 <li>Visualization</li>
@@ -345,24 +345,56 @@ div.tocify {
 </ul>
 <p>Stay tuned as we add additional sections!</p>
 <p> </p>
-<div id="installation-and-setup" class="section level2">
-<h2>Installation and setup</h2>
+<div id="installation-and-orientation" class="section level2">
+<h2>Installation and Orientation</h2>
 <div id="installation" class="section level3">
 <h3>Installation</h3>
+<p>You will need to download and setup <strong>two</strong> things to use R.</p>
+<ul>
+<li><a href="https://cran.cnr.berkeley.edu">R</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio</a></li>
+</ul>
+<p>For the R link, click your OS and click the first link. You’ll want to download the main or newest version. For RStudio, you’ll want to look under the installers section and click the link for your OS.</p>
+<blockquote>
+<p>Why do you need two? R is the software that allows your computer to run and read R code. RStudio is another software package that makes R a lot more user-friendly. It has a graphical interface and a bunch of nice features to make code writing easier.</p>
+</blockquote>
+<p> </p>
 </div>
-<div id="orientation-to-the-software" class="section level3">
-<h3>Orientation to the Software</h3>
-<p>What is the environment window?</p>
-<p>What is the editor window?</p>
-<p>What is the console?</p>
+<div id="orientation" class="section level3">
+<h3>Orientation</h3>
+<p>When you first open RStudio, you should see 4 windows:</p>
+<div class="figure">
+<img src="RStudioGUI.png" />
+
+</div>
+<p> </p>
+<ol style="list-style-type: decimal">
+<li>Code editor: this is where you’ll be typing your code</li>
+<li>Console: this is like your DOS/terminal which will show you code results. You will RARELY be typing into this window.</li>
+<li>Environment: this shows you what types of variables and libraries (software addins) that you have in your session</li>
+<li>File Window: this shows you the directory of files.</li>
+</ol>
+<p>The entire interface is customizable, so don’t worry if you don’t see this exact setup or if you don’t like it. The <strong>most important</strong> screens we will be dealing with are the code editor and the console!</p>
+<p> </p>
 </div>
 </div>
 <div id="overview" class="section level2">
 <h2>Overview</h2>
 <div id="why-use-r" class="section level3">
 <h3>Why use R?</h3>
-<p>What is R and why do we care?</p>
-<p>Text-based Transparent, reproducible, editable workflows Lots of support online What does a program do and what is a function and what does the logic do?</p>
+<p>R is a free, open-source, text-based programming language originally designed for data analysis. Since its introduction, lots of people have added additional software packages to it that expanded its functionality. It can create sexy visualizations, build websites like this one, do advanced machine learning, and more!</p>
+<blockquote>
+<p>Another important question for business school students is which language should I choose to learn? R? Python? etc. At this juncture, it doesn’t really matter which you learn. What’s more important is that you take away the principles and concepts of how these text-based languages work. Once you learn one, you can learn the other very easily. The difference is syntax.</p>
+</blockquote>
+<p>Lastly, text-based languages are transparent, reproducible, and are editable workflows. It’s generally easier to follow a code flow than an Excel or Access file.</p>
+<p> </p>
+</div>
+<div id="your-first-program" class="section level3">
+<h3>Your first program</h3>
+<p>Let’s go ahead and get started! Let’s dive into your console window and start fiddling around.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="st">&#39;Hello World!&#39;</span>)</code></pre></div>
+<pre><code>## [1] &quot;Hello World!&quot;</code></pre>
+<p>What does a program do and what is a function and what does the logic do?</p>
 <p>Good to show example and make interactive show win/accomplishment need problems &amp; examples maybe marry to Excel to show understanding data Need to go through the environment (console vs editor), comments, and Explanation of head() Getting your window back Go through the logic of packages/library go through process of downloading new libraries go through process of loading a library When programs are done running (when console is done) Parameters for new libraries, how do you know how many it takes? Also, what does a data table mean in a parameter? One dude wants to get into actually programming for consulting Piping, go thru one step at a time Office hours for actual practice application of these problems Managing question flow for session Airline problem might be way too many functions for students to handle, maybe focus on five or six and really drill down into Rushing through these functions, need to really step through practice problems Regression &amp; Visualization should really be its own session Explain that these sessions are meant for teaching code vs. working with professors to work out regression ggplot library documentation themed libraries install packages ‘ggridges’ tidyverse library documentation Session to show what libraries can do, but not necessarily meant to get you to expert level. Have to do practice problems Regression dummy variables + fixed effects? O’Reilly &amp; Visualization R e-book links Links to good R teaching sites</p>
 </div>
 </div>

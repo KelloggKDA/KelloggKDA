@@ -14,13 +14,13 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-*Last updated 10/20/2017*
+*Last updated 10/24/2017*
 
 ***
 
 This site was set up to host the content taught during these sessions and are meant for students for reference or for self-study. It is split into different sessions: 
 
-  * Installation and setup
+  * Installation
   * Importing data 
   * Data cleansing 
   * Visualization 
@@ -30,27 +30,60 @@ Stay tuned as we add additional sections!
 
 &nbsp; 
 
-## Installation and setup
+## Installation and Orientation
 
 ### Installation
 
-### Orientation to the Software
+You will need to download and setup **two** things to use R. 
+  
+  * [R](https://cran.cnr.berkeley.edu)
+  * [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+  
+For the R link, click your OS and click the first link. You'll want to download the main or newest version. For RStudio, you'll want to look under the installers section and click the link for your OS. 
 
-What is the environment window?
+> Why do you need two? R is the software that allows your computer to run and read R code. RStudio is another software package that makes R a lot more user-friendly. It has a graphical interface and a bunch of nice features to make code writing easier. 
 
-What is the editor window?
+&nbsp; 
 
-What is the console?
+### Orientation
+
+When you first open RStudio, you should see 4 windows:
+
+![](RStudioGUI.png)
+
+&nbsp; 
+
+  1. Code editor: this is where you'll be typing your code
+  2. Console: this is like your DOS/terminal which will show you code results. You will RARELY be typing into this window. 
+  3. Environment: this shows you what types of variables and libraries (software addins) that you have in your session
+  4. File Window: this shows you the directory of files. 
+  
+The entire interface is customizable, so don't worry if you don't see this exact setup or if you don't like it. The **most important** screens we will be dealing with are the code editor and the console! 
+
+&nbsp; 
 
 ## Overview
 
 ### Why use R?
 
-What is R and why do we care?
+R is a free, open-source, text-based programming language originally designed for data analysis. Since its introduction, lots of people have added additional software packages to it that expanded its functionality. It can create sexy visualizations, build websites like this one, do advanced machine learning, and more! 
 
-Text-based
-Transparent, reproducible, editable workflows
-Lots of support online
+> Another important question for business school students is which language should I choose to learn? R? Python? etc. At this juncture, it doesn't really matter which you learn. What's more important is that you take away the principles and concepts of how these text-based languages work. Once you learn one, you can learn the other very easily. The difference is syntax. 
+
+Lastly, text-based languages are transparent, reproducible, and are editable workflows. It's generally easier to follow a code flow than an Excel or Access file. 
+
+&nbsp; 
+
+### Your first program
+
+Let's go ahead and get started! Let's dive into your console window and start fiddling around.
+
+```{r}
+print('Hello World!')
+```
+
+
+
 What does a program do and what is a function and what does the logic do?
 
 Good to show example and make interactive
