@@ -2,7 +2,7 @@
 title: "Welcome to R Workshop Series"
 output: 
   html_document:
-    theme: cayman
+    theme: lumen
     highlight: tango
     toc: true
     toc_float: 
@@ -33,6 +33,18 @@ Stay tuned as we add additional sections!
 ## Installation and setup
 
 ### Installation
+
+### Orientation to the Software
+
+What is the environment window?
+
+What is the editor window?
+
+What is the console?
+
+## Overview
+
+### Why use R?
 
 What is R and why do we care?
 
@@ -72,11 +84,20 @@ dummy variables + fixed effects?
 O’Reilly & Visualization R e-book links
 Links to good R teaching sites
 
+## Data cleansing
+
+### Tidyverse
+
+## Data visualization
+
+### ggplot
+
+
 &nbsp; 
 
 ## Example Problems
 
-### NYC Flight Information
+### Data cleansing: NYC Flight Information
 
 Let's take a look at a sample dataset containing flight information. We'll be using the "nycflights13" library so go ahead and make sure that's installed.
 
