@@ -1,2 +1,0 @@
-# KDA_website
-# rtkako
