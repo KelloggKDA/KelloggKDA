@@ -85,6 +85,7 @@ In it, you'll go over a lot of programming basics that you'll have to know to us
   * data types: what types of data can you store in variables
   * vectors: how to store MULTIPLE data points 
   
+HELLO WORLD  
 
 What does a program do and what is a function and what does the logic do?
 
