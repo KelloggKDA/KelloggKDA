@@ -11,7 +11,7 @@
 
 
 
-<title>Hello World</title>
+<title>Resources</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,23 +19,11 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
-}
-</script>
 
 
 
@@ -161,6 +149,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -199,19 +282,63 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Hello World</h1>
+<h1 class="title toc-ignore">Resources</h1>
 
 </div>
 
 
 <p><em>Last updated 10/26/2017</em></p>
 <hr />
-<p>Welcome to the KDA Website! We created this site to foster community among Kellogg students who want to learn about data analytics. Our goal is to de-mystify analytics and to help YOU get smart on data.</p>
-<p>We understand <strong>the LAST thing</strong> MBA students want to do is tweak and fiddle with code, so we will try to keep this as high-level and MBA-appropriate where possible. Stay tuned for new content, which we’ll announce through the newsletter!</p>
-<p>If you have any questions, feel free to reach out to us at <a href="mailto:kda@kellogg.northwestern.edu">kda@kellogg.northwestern.edu</a>.</p>
+<p>There are many resources for self-guided study.</p>
+<div id="stuff" class="section level2">
+<h2>Stuff</h2>
+<div id="northwestern-access-required" class="section level3">
+<h3>Northwestern access required</h3>
+<p>Check these out while you still have Northwestern student privileges!</p>
+<ul>
+<li><a href="https://www.tableau.com/academic/students">Tableau License</a>: FREE for students!</li>
+<li><a href="http://www.it.northwestern.edu/research/campus-events/data-camp.html">DataCamp</a>: Online courses for R, Python, and SQL</li>
+<li><a href="https://northwestern-r-users.github.io">Northwestern R User Group</a>: Lots of good resources for R here! Monthly classroom sessions on rotating topics.</li>
+<li><a href="http://www.it.northwestern.edu/research/campus-events/index.html">Northwestern IT Training &amp; Events</a>: Check back here for live workshops on Python &amp; R</li>
+</ul>
+<p>Northwestern also provides free Lynda access!</p>
+<ul>
+<li></li>
+</ul>
+</div>
+<div id="cheat-sheets-and-reference-guides" class="section level3">
+<h3>Cheat Sheets and Reference Guides</h3>
+<p>Forgot what the command for klincom was? No worries, check out these handy one-pagers with function descriptions!</p>
+<ul>
+<li><a href="https://geocenter.github.io/StataTraining/portfolio/01_resource/">STATA</a></li>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/">R</a></li>
+<li><a href="https://ehmatthes.github.io/pcc/cheatsheets/README.html">Python</a></li>
+</ul>
+</div>
+<div id="excel" class="section level3">
+<h3>Excel</h3>
+</div>
+<div id="tableau" class="section level3">
+<h3>Tableau</h3>
+<ul>
+<li><a href="https://www.tableau.com/learn/training">Tableau training</a></li>
+</ul>
+</div>
+<div id="sql" class="section level3">
+<h3>SQL</h3>
+</div>
+<div id="python" class="section level3">
+<h3>Python</h3>
+</div>
+<div id="r" class="section level3">
+<h3>R</h3>
+</div>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 

@@ -6,7 +6,7 @@ output:
     highlight: tango
     toc: true
     toc_float: 
-      collapsed: false
+      collapsed: true
       smooth_scroll: false
 ---
 
@@ -20,13 +20,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This site was set up to host the content taught during these sessions and are meant for students for reference or for self-study. It is split into different sessions: 
 
-  * Installation
+  * Installation & Orientation
+  * Basics through DataCamp
   * Importing data 
   * Data cleansing 
   * Visualization 
   * Regression 
   
 Stay tuned as we add additional sections!  
+
+## Overview
+
+### Why use R?
+
+R is a free, open-source, text-based programming language originally designed for data analysis. Since its introduction, lots of people have added additional software packages to it that expanded its functionality. It can create sexy visualizations, build websites like this one, do advanced machine learning, and more! 
+
+> Another important question for business school students is which language should I choose to learn? R? Python? etc. At this juncture, it doesn't really matter which you learn. What's more important is that you take away the principles and concepts of how these text-based languages work. Once you learn one, you can learn the other very easily. The difference is syntax. 
+
+Lastly, text-based languages are transparent, reproducible, and are editable workflows. It's generally easier to follow a code flow than an Excel or Access file. 
 
 &nbsp; 
 
@@ -38,6 +49,7 @@ You will need to download and setup **two** things to use R.
   
   * [R](https://cran.cnr.berkeley.edu)
   * [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+  * [*Video Tutorial if you need assistance*](https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=3)
   
 For the R link, click your OS and click the first link. You'll want to download the main or newest version. For RStudio, you'll want to look under the installers section and click the link for your OS. 
 
@@ -62,27 +74,17 @@ The entire interface is customizable, so don't worry if you don't see this exact
 
 &nbsp; 
 
-## Overview
+### Basics through DataCamp
 
-### Why use R?
+We **highly recommend** going through the DataCamp course: Introduction to R for Data Science to learn the basics of programming and R. You can find a link to it under the Resources tab up above. It's super intuitive, does a good job teaching the basics, and gives you a follow along environment in your browser that's really helpful.
 
-R is a free, open-source, text-based programming language originally designed for data analysis. Since its introduction, lots of people have added additional software packages to it that expanded its functionality. It can create sexy visualizations, build websites like this one, do advanced machine learning, and more! 
+In it, you'll go over a lot of programming basics that you'll have to know to use more advanced functions in R:
 
-> Another important question for business school students is which language should I choose to learn? R? Python? etc. At this juncture, it doesn't really matter which you learn. What's more important is that you take away the principles and concepts of how these text-based languages work. Once you learn one, you can learn the other very easily. The difference is syntax. 
-
-Lastly, text-based languages are transparent, reproducible, and are editable workflows. It's generally easier to follow a code flow than an Excel or Access file. 
-
-&nbsp; 
-
-### Your first program
-
-Let's go ahead and get started! Let's dive into your console window and start fiddling around.
-
-```{r}
-print('Hello World!')
-```
-
-
+  * operators: how math functions work
+  * variables: how to assign stuff
+  * data types: what types of data can you store in variables
+  * vectors: how to store MULTIPLE data points 
+  
 
 What does a program do and what is a function and what does the logic do?
 

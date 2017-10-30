@@ -6,7 +6,7 @@ output:
     highlight: tango
     toc: true
     toc_float: 
-      collapsed: false
+      collapsed: true
       smooth_scroll: false
 ---
 
@@ -14,98 +14,218 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-*Last updated 10/20/2017*
+*Last updated 10/26/2017*
 
 ***
 
-This site was set up to host the content taught during these sessions and are meant for students for reference or for self-study. It is split into the following sections: 
+This site was set up to host workshop content and is meant for students for reference/self-study. It is split into the following sections: 
 
-  * Introduction to Python 
-  * Data Visualization 
-  * Machine Learning
-  * Office Hours & Optimization 
-  
+  * Introduction & Basics 
+  * Data Visualization *(coming soon)*
+  * Machine Learning *(coming soon)*
+
 Stay tuned as we add additional sections!  
 
 &nbsp; 
 
+
 ## Introduction to Python
 
 ### What is Python?
-Python is a high-level, which means it's easier to read/write than machine code, computer language. It's a swiss army knife-like tool that is quick to deploy and can be used for all sorts of applications. 
+Python is a high-level programming language. It's a swiss army knife-like tool that is quick to deploy and can be used for all sorts of applications. 
 
-Just a quick laundry list of things I've used it for at work: 
+<center>
+![](http://s2.quickmeme.com/img/c1/c18763cc00aaebf5ca42bbb5b88922b9ab4fd759e06ae3f1b8b460151eaf0f94.jpg)
+</center>
 
-  * Crawling through a network folder constantly 
-  * Generating a report out of XLS and emailing it out to certain people
+&nbsp;
+
+Just a quick laundry list of things it can be used it for at work: 
+
+  * Automating menial tasks like mail-merging, reporting, and making updates in files
+  * Making pretty charts ![charts](https://i.stack.imgur.com/TEO2z.jpg)
+  * And of course, analytics! 
+
+&nbsp; 
+
+
+### Why Python vs. Excel/Tableau/SQL? 
+
+Python is FREE. That's numero uno. 
+
+Second, have you ever tried to walk through someone else's Excel workbook? That's at best mildly annoying, and at worst, an absolute nightmare. Once you learn them, Python and other text-based languages allow for clean and logical information sharing. 
+
+Lastly, Python can do WAY more once you learn how to use it. Once you hit Excel's limit on rows (~100K records) you'll need to transition to a more powerful tool, cough Python. Further, unlike Excel/Powerpoint, new functionality is added all the time. 
+
+> Should you learn R or Python? It doesn't matter for analytics. Once you learn one you can pick the other up pretty easily. However, Python is broadly a more universal tool that can do more things. If you plan to do stuff outside of analytics, you should learn Python.
+
+&nbsp;
+
 
 ### Installation
 
-Before we begin, we have to make sure you have Python installed on your machine. 
+Step 1, install Python. 
 
-> We will use version 2.7 for this entire series. There is a newer 3.X version available, which introduces new functions but **most** applications use Python 2.7.
+> We will use version 2.7. There is a newer 3.X version available, which introduces new functions but **most** applications use Python 2.7.
 
-You can download Python 2.7 here: (https://www.python.org/downloads/release/python-2714/)
+You can download Python 2.7 @ https://www.python.org/downloads/release/python-2714/
 
-You will need scroll down until they see Files and click to download the package for their system. If you have Mac OS X 10.6 or later, you will need to download the Mac OS X 64-bit/32-bit installer package. If you have Windows, they will need to download the Windows x86-64 MSI installer package.
-
-I recommend going through the Getting Started page as well. The wiki has a wealth of information if you ever get stuck on something:
-Python 2.x Wiki: https://docs.python.org/2.7/
+Scroll down until you hit the 'Files' section. If you have Windows, download the Windows x86-64 MSI installer package. If you have a Mac, you have Python installed by default. 
 
 &nbsp;
 
-### Why Python?
 
-Clean syntax, powerful extensions and libraries (think of this as additional software upgrades). It's also super easy and iterative to use. Traditional programming languages require you to compile (translate) your code before running it, which takes extra time! 
+### What do I need to know to start? 
+
+First off, you'll need to know some terminology.
+
+  * **shell**: sometimes referred to as terminal too. Kind of like a DOS-prompt for Python, notice the ">>>" in the window. This window will give you error messages when something goes wrong, but other than that, you won't be in this very much.  
+
+<center>
+![](https://www.cs.cornell.edu/courses/cs1110/2013sp/materials/images/windows-python-prompt.png)  
+  </center>
+  
+  &nbsp;
+  
+  * **library**: a pre-programmed software addin that adds functionality to Python (allows it to make pretty graphs or run analytical models or make it easier to manipulate data). Below are a few examples:
+    + [numpy](http://www.numpy.org): allows Python to do data manipulations
+    + [ggplot](http://ggplot.yhathq.com): lets Python create Tableau-like graphics
+    + [seaborn](https://seaborn.pydata.org): another super popular visualization for statistics package
+    + [pandas](http://pandas.pydata.org): allows Python to do store data and do Excel-like manipulations on data
+    
+<center>
+![](https://cambridgespark.com/assets/images/courses/bootcamp-technology.png)
+</center>
 
 &nbsp;
+
+  * **text editor**: what you'll be writing your code in (front window, the shell is in the back)
+
+<center>
+![](https://upload.wikimedia.org/wikipedia/en/9/9b/Idle_gui.png)
+</center>
+
+&nbsp;
+
+Second, the installation allows your computer to understand Python code and will set you up with a crappy text editor called IDLE. For our purposes here, we'll use IDLE. The next section will detail out a couple of better ones you can try :) 
+
+Lastly, if you ever run into an error, there are a TON of resources on the web for help. Your best bet is to google "what does (insert error message here) mean Python?" and you should find an answer. Feel free to also hit up KDA office hours! 
+
+&nbsp;
+
 
 ### Text Editors
 
 Software editors are often used to write code. They help highlight certain parts of code (SUPER useful), use smart indenting, and basically you should totally be using one and NOT Notepad/Textpad. They also contain super helpful menu commands for changing settings and running code previews. 
 
-There are a few online editors out there that you can try: 
-  
-  * [Jupyter Notebooks (recommended)](https://jupyter.org)  
-  * [Katacoda](https://www.katacoda.com/courses/python/playground) 
-  * [Codenvy](http://www.codenvy.com/)
-  * [Python Anywhere](https://www.pythonanywhere.com)
-  
-These are great for quick prototyping but aren't recommended for any serious application. 
+There are a few out there that you can try: 
 
-Offline editors: 
-  
-  * IDLE (default)
   * [Atom (recommended)](https://atom.io)
   * [Sublime](https://www.sublimetext.com)
   * [Notepad++](https://notepad-plus-plus.org) 
    
-We will use IDLE in class. There are a few really good offline ones out there (listed above) but it really comes down to personal preference. This really won't matter unless you are thinking about serious 
-
 &nbsp;
+
 
 ### Getting comfortable with the environment
 
-Now that you have installed Python, let's dive in! Open up an IDLE session and let's get cranking. 
+Now that you have installed Python, let's dive in! Open up a new text file in your brand new spankin' text editor or IDLE and let's get cranking.
 
-There is a hierarchy for code:
+#### Functions
 
-  * Programs are composed of modules
-  * Modules contain statements
-  * Statements contain expressions
-  * Expressions create and process objects
-    + Expressions are the founding blocks of code
-    
-Confused yet? Don't worry this look way easier in code. For the purposes of this session, we will only look at expressions and statements. Try typing the below into your IDLE and run it.
+Let's write your first code. Go ahead and type the following in your editor and click on "Run" (or hit F5). 
 
-```{python}
-print('Hello World')
+```{python, results='hide'}
+print("Hello World")
 ```
 
-In that above example, the object is 'Hello World'. The statement is print('Hello World'). Blocks of code that can be called again and again are modules, and a bunch of modules designed to do something is called a program. 
+You should see the following:
 
-To use another analogy, think about a bakery. You need your baking ingredients like flour, yeast, and water. These are your objects. By putting them into a mixer, you are using a pre-built machine that only does mixing, a statement. You can't use the mixer to do anything else but mix. It also takes certain things (like baking ingredients). If you try putting other things in there, the mixer won't mix. Similarly, if you try putting objects into a statement that it doesn't recognize it will give you an error. More on that later. 
+```{python, echo=FALSE}
+print("Hello World")
+```
 
-If you think about the entire process of baking a loaf of bread, you need to mix the ingredients, bake them in the oven, and let the loaf cool. This set of activities is repeated over and over again, and the process is the same the entire time. This would be a module, a collection of statements. 
+You have your first program, yay! Functions work like they do in Excel where you type out a function and give it parameters within the (). Notice how we put Hello World in quotes. That's because it's considered a string. If you put it in there without quotes, you'll get an error message...
 
-If we think about the act of running a bakery, like marketing, accounting, and sales, that would be like a program. It's a set of business activities (or coding modules) that are put together! Make sense? 
+<center>
+![](http://www.learnpythononline.org/images/python-hello-world-error.JPG)
+</center>
+
+Other commonly used functions:
+
+  * print(): prints stuff to the screen, duh. 
+  * len(): takes the length of a string or how many things in another thing
+  * str(): takes an integer and turns it into a string
+  * [all base Python functions](https://docs.python.org/2/library/functions.html): note that these are vanilla Python functions. Once you start installing libraries you will get access to new functions so check the library websites for a list of those and how to use them!
+  
+#### Variables
+
+Think of variables like storage containers. You can save the value of something and recall it later on in your code. 
+
+```{python}
+x = 8
+y = "9"
+z = 1
+
+print(x + 1)
+print(x + z * x)
+print(y)
+```
+
+These work as expected. Go ahead and try to run y + 1...What happens?
+
+<center>
+![](http://v4.software-carpentry.org/python/basics/041.png)
+</center>
+
+You should see something very similar to the error message above. Python is very picky about what it takes in. Addition will only work between two integers, which our variables x and z are. If you wanted to add up x and y, you would first have to turn y into an integer. 
+
+```{python}
+x = 8
+y = "9"
+print(x + int(y))
+```
+
+Bottom line is to pay attention to what types of variables you have and what you are trying to do with them. Lastly, you can choose most words or random characters to be variables. Some words can't be used as variables because they are saved only for Python use. Make sure you use a variable that makes sense! 
+
+#### Commenting
+
+Do it.
+
+#### Data Structures
+
+  * lists: basically it's a collection of stuff. 
+  
+<center>
+![](https://www.analyticsvidhya.com/wp-content/uploads/2014/07/python_lists.png)
+</center>
+
+## Example Problems
+
+### University Data
+
+Goals: 
+Libraries: 
+
+Let's take a look at a dataset, the post-secondary universe survey from 2013 from data.gov. 
+
+```{python}
+import sys
+print sys.version
+```
+
+<!-- ```{python} -->
+<!-- import urllib, pandas as pd -->
+<!-- # we will be using a built in library called urllib, this is typically used to scrape data from the web -->
+
+<!-- url = 'https://inventory.data.gov/dataset/032e19b4-5a90-41dc-83ff-6e4cd234f565/resource/38625c3d-5388-4c16-a30f-d105432553a4/download/postscndryunivsrvy2013dirinfo.csv' -->
+<!-- # we create a variable that stores the URL of the dataset we are interested in -->
+
+<!-- fileobj = urllib.urlopen(url) -->
+<!-- # we create another variable named fileobj to store  -->
+
+<!-- df = pd.read_json(fileobj) -->
+
+<!-- ``` -->
+
+

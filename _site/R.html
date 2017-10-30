@@ -211,7 +211,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = false;
+    options.showAndHide = true;
     options.smoothScroll = false;
 
     // tocify
@@ -274,12 +274,6 @@ div.tocify {
   border-radius: 0px;
 }
 
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
 
 </style>
 
@@ -303,7 +297,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Kellogg Data & Analytics Website <img id="logo" style="position: absolute; top: 0px; left: 643px; width: 60px;" src="bars.png" /></a>
+      <a class="navbar-brand" href="index.html">Kellogg Data & Analytics Website <img src="bars.png" style="position: relative; top: -7px; right: -4px; width: 50px; float: right;" /></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -318,6 +312,9 @@ div.tocify {
 </li>
 <li>
   <a href="R.html">R Workshop Series</a>
+</li>
+<li>
+  <a href="resources.html">Resources</a>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -337,14 +334,26 @@ div.tocify {
 <hr />
 <p>This site was set up to host the content taught during these sessions and are meant for students for reference or for self-study. It is split into different sessions:</p>
 <ul>
-<li>Installation</li>
+<li>Installation &amp; Orientation</li>
+<li>Basics through DataCamp</li>
 <li>Importing data</li>
 <li>Data cleansing</li>
 <li>Visualization</li>
 <li>Regression</li>
 </ul>
 <p>Stay tuned as we add additional sections!</p>
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<div id="why-use-r" class="section level3">
+<h3>Why use R?</h3>
+<p>R is a free, open-source, text-based programming language originally designed for data analysis. Since its introduction, lots of people have added additional software packages to it that expanded its functionality. It can create sexy visualizations, build websites like this one, do advanced machine learning, and more!</p>
+<blockquote>
+<p>Another important question for business school students is which language should I choose to learn? R? Python? etc. At this juncture, it doesn’t really matter which you learn. What’s more important is that you take away the principles and concepts of how these text-based languages work. Once you learn one, you can learn the other very easily. The difference is syntax.</p>
+</blockquote>
+<p>Lastly, text-based languages are transparent, reproducible, and are editable workflows. It’s generally easier to follow a code flow than an Excel or Access file.</p>
 <p> </p>
+</div>
+</div>
 <div id="installation-and-orientation" class="section level2">
 <h2>Installation and Orientation</h2>
 <div id="installation" class="section level3">
@@ -353,6 +362,7 @@ div.tocify {
 <ul>
 <li><a href="https://cran.cnr.berkeley.edu">R</a></li>
 <li><a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio</a></li>
+<li><a href="https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=3"><em>Video Tutorial if you need assistance</em></a></li>
 </ul>
 <p>For the R link, click your OS and click the first link. You’ll want to download the main or newest version. For RStudio, you’ll want to look under the installers section and click the link for your OS.</p>
 <blockquote>
@@ -377,23 +387,16 @@ div.tocify {
 <p>The entire interface is customizable, so don’t worry if you don’t see this exact setup or if you don’t like it. The <strong>most important</strong> screens we will be dealing with are the code editor and the console!</p>
 <p> </p>
 </div>
-</div>
-<div id="overview" class="section level2">
-<h2>Overview</h2>
-<div id="why-use-r" class="section level3">
-<h3>Why use R?</h3>
-<p>R is a free, open-source, text-based programming language originally designed for data analysis. Since its introduction, lots of people have added additional software packages to it that expanded its functionality. It can create sexy visualizations, build websites like this one, do advanced machine learning, and more!</p>
-<blockquote>
-<p>Another important question for business school students is which language should I choose to learn? R? Python? etc. At this juncture, it doesn’t really matter which you learn. What’s more important is that you take away the principles and concepts of how these text-based languages work. Once you learn one, you can learn the other very easily. The difference is syntax.</p>
-</blockquote>
-<p>Lastly, text-based languages are transparent, reproducible, and are editable workflows. It’s generally easier to follow a code flow than an Excel or Access file.</p>
-<p> </p>
-</div>
-<div id="your-first-program" class="section level3">
-<h3>Your first program</h3>
-<p>Let’s go ahead and get started! Let’s dive into your console window and start fiddling around.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="st">&#39;Hello World!&#39;</span>)</code></pre></div>
-<pre><code>## [1] &quot;Hello World!&quot;</code></pre>
+<div id="basics-through-datacamp" class="section level3">
+<h3>Basics through DataCamp</h3>
+<p>We <strong>highly recommend</strong> going through the DataCamp course: Introduction to R for Data Science to learn the basics of programming and R. You can find a link to it under the Resources tab up above. It’s super intuitive, does a good job teaching the basics, and gives you a follow along environment in your browser that’s really helpful.</p>
+<p>In it, you’ll go over a lot of programming basics that you’ll have to know to use more advanced functions in R:</p>
+<ul>
+<li>operators: how math functions work</li>
+<li>variables: how to assign stuff</li>
+<li>data types: what types of data can you store in variables</li>
+<li>vectors: how to store MULTIPLE data points</li>
+</ul>
 <p>What does a program do and what is a function and what does the logic do?</p>
 <p>Good to show example and make interactive show win/accomplishment need problems &amp; examples maybe marry to Excel to show understanding data Need to go through the environment (console vs editor), comments, and Explanation of head() Getting your window back Go through the logic of packages/library go through process of downloading new libraries go through process of loading a library When programs are done running (when console is done) Parameters for new libraries, how do you know how many it takes? Also, what does a data table mean in a parameter? One dude wants to get into actually programming for consulting Piping, go thru one step at a time Office hours for actual practice application of these problems Managing question flow for session Airline problem might be way too many functions for students to handle, maybe focus on five or six and really drill down into Rushing through these functions, need to really step through practice problems Regression &amp; Visualization should really be its own session Explain that these sessions are meant for teaching code vs. working with professors to work out regression ggplot library documentation themed libraries install packages ‘ggridges’ tidyverse library documentation Session to show what libraries can do, but not necessarily meant to get you to expert level. Have to do practice problems Regression dummy variables + fixed effects? O’Reilly &amp; Visualization R e-book links Links to good R teaching sites</p>
 </div>

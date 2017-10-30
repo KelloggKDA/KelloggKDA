@@ -9,12 +9,12 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-*Last updated 10/20/2017*
+*Last updated 10/26/2017*
 
 ***
 
-Welcome to the KDA Website! We created this as a space to help foster a community of Kellogg students who are passionate about data analytics. Our goal is to help guide YOU on your journey to better use data and make analytics more user-friendly.  
+Welcome to the KDA Website! We created this site to foster community among Kellogg students who want to learn about data analytics. Our goal is to de-mystify analytics and to help YOU get smart on data. 
 
-We will post content, example code, and any cool examples here. Stay tuned for new content, which we will announce through the newsletter! Use the navigation pane in the upper left of the site to find topics you are interested in.
+We understand **the LAST thing** MBA students want to do is tweak and fiddle with code, so we will try to keep this as high-level and MBA-appropriate where possible. Stay tuned for new content, which we'll announce through the newsletter! 
 
 If you have any questions, feel free to reach out to us at kda@kellogg.northwestern.edu.

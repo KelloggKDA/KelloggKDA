@@ -211,7 +211,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = false;
+    options.showAndHide = true;
     options.smoothScroll = false;
 
     // tocify
@@ -274,12 +274,6 @@ div.tocify {
   border-radius: 0px;
 }
 
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
 
 </style>
 
@@ -303,7 +297,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Kellogg Data & Analytics Website <img id="logo" style="position: absolute; top: 0px; left: 643px; width: 60px;" src="bars.png" /></a>
+      <a class="navbar-brand" href="index.html">Kellogg Data & Analytics Website <img src="bars.png" style="position: relative; top: -7px; right: -4px; width: 50px; float: right;" /></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -319,6 +313,9 @@ div.tocify {
 <li>
   <a href="R.html">R Workshop Series</a>
 </li>
+<li>
+  <a href="resources.html">Resources</a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -333,14 +330,13 @@ div.tocify {
 </div>
 
 
-<p><em>Last updated 10/20/2017</em></p>
+<p><em>Last updated 10/26/2017</em></p>
 <hr />
-<p>This site was set up to host the content taught during these sessions and are meant for students for reference or for self-study. It is split into the following sections:</p>
+<p>This site was set up to host workshop content and is meant for students for reference/self-study. It is split into the following sections:</p>
 <ul>
-<li>Introduction to Python</li>
-<li>Data Visualization</li>
-<li>Machine Learning</li>
-<li>Office Hours &amp; Optimization</li>
+<li>Introduction &amp; Basics</li>
+<li>Data Visualization <em>(coming soon)</em></li>
+<li>Machine Learning <em>(coming soon)</em></li>
 </ul>
 <p>Stay tuned as we add additional sections!</p>
 <p> </p>
@@ -348,71 +344,164 @@ div.tocify {
 <h2>Introduction to Python</h2>
 <div id="what-is-python" class="section level3">
 <h3>What is Python?</h3>
-<p>Python is a high-level, which means it’s easier to read/write than machine code, computer language. It’s a swiss army knife-like tool that is quick to deploy and can be used for all sorts of applications.</p>
-<p>Just a quick laundry list of things I’ve used it for at work:</p>
+<p>Python is a high-level programming language. It’s a swiss army knife-like tool that is quick to deploy and can be used for all sorts of applications.</p>
+<center>
+<img src="http://s2.quickmeme.com/img/c1/c18763cc00aaebf5ca42bbb5b88922b9ab4fd759e06ae3f1b8b460151eaf0f94.jpg" />
+</center>
+<p> </p>
+<p>Just a quick laundry list of things it can be used it for at work:</p>
 <ul>
-<li>Crawling through a network folder constantly</li>
-<li>Generating a report out of XLS and emailing it out to certain people</li>
+<li>Automating menial tasks like mail-merging, reporting, and making updates in files</li>
+<li>Making pretty charts <img src="https://i.stack.imgur.com/TEO2z.jpg" alt="charts" /></li>
+<li>And of course, analytics!</li>
 </ul>
+<p> </p>
+</div>
+<div id="why-python-vs.exceltableausql" class="section level3">
+<h3>Why Python vs. Excel/Tableau/SQL?</h3>
+<p>Python is FREE. That’s numero uno.</p>
+<p>Second, have you ever tried to walk through someone else’s Excel workbook? That’s at best mildly annoying, and at worst, an absolute nightmare. Once you learn them, Python and other text-based languages allow for clean and logical information sharing.</p>
+<p>Lastly, Python can do WAY more once you learn how to use it. Once you hit Excel’s limit on rows (~100K records) you’ll need to transition to a more powerful tool, cough Python. Further, unlike Excel/Powerpoint, new functionality is added all the time.</p>
+<blockquote>
+<p>Should you learn R or Python? It doesn’t matter for analytics. Once you learn one you can pick the other up pretty easily. However, Python is broadly a more universal tool that can do more things. If you plan to do stuff outside of analytics, you should learn Python.</p>
+</blockquote>
+<p> </p>
 </div>
 <div id="installation" class="section level3">
 <h3>Installation</h3>
-<p>Before we begin, we have to make sure you have Python installed on your machine.</p>
+<p>Step 1, install Python.</p>
 <blockquote>
-<p>We will use version 2.7 for this entire series. There is a newer 3.X version available, which introduces new functions but <strong>most</strong> applications use Python 2.7.</p>
+<p>We will use version 2.7. There is a newer 3.X version available, which introduces new functions but <strong>most</strong> applications use Python 2.7.</p>
 </blockquote>
-<p>You can download Python 2.7 here: (<a href="https://www.python.org/downloads/release/python-2714/" class="uri">https://www.python.org/downloads/release/python-2714/</a>)</p>
-<p>You will need scroll down until they see Files and click to download the package for their system. If you have Mac OS X 10.6 or later, you will need to download the Mac OS X 64-bit/32-bit installer package. If you have Windows, they will need to download the Windows x86-64 MSI installer package.</p>
-<p>I recommend going through the Getting Started page as well. The wiki has a wealth of information if you ever get stuck on something: Python 2.x Wiki: <a href="https://docs.python.org/2.7/" class="uri">https://docs.python.org/2.7/</a></p>
+<p>You can download Python 2.7 @ <a href="https://www.python.org/downloads/release/python-2714/" class="uri">https://www.python.org/downloads/release/python-2714/</a></p>
+<p>Scroll down until you hit the ‘Files’ section. If you have Windows, download the Windows x86-64 MSI installer package. If you have a Mac, you have Python installed by default.</p>
 <p> </p>
 </div>
-<div id="why-python" class="section level3">
-<h3>Why Python?</h3>
-<p>Clean syntax, powerful extensions and libraries (think of this as additional software upgrades). It’s also super easy and iterative to use. Traditional programming languages require you to compile (translate) your code before running it, which takes extra time!</p>
+<div id="what-do-i-need-to-know-to-start" class="section level3">
+<h3>What do I need to know to start?</h3>
+<p>First off, you’ll need to know some terminology.</p>
+<ul>
+<li><strong>shell</strong>: sometimes referred to as terminal too. Kind of like a DOS-prompt for Python, notice the “&gt;&gt;&gt;” in the window. This window will give you error messages when something goes wrong, but other than that, you won’t be in this very much.</li>
+</ul>
+<center>
+<img src="https://www.cs.cornell.edu/courses/cs1110/2013sp/materials/images/windows-python-prompt.png" /><br />
+
+</center>
+<p> </p>
+<ul>
+<li><strong>library</strong>: a pre-programmed software addin that adds functionality to Python (allows it to make pretty graphs or run analytical models or make it easier to manipulate data). Below are a few examples:
+<ul>
+<li><a href="http://www.numpy.org">numpy</a>: allows Python to do data manipulations</li>
+<li><a href="http://ggplot.yhathq.com">ggplot</a>: lets Python create Tableau-like graphics</li>
+<li><a href="https://seaborn.pydata.org">seaborn</a>: another super popular visualization for statistics package</li>
+<li><a href="http://pandas.pydata.org">pandas</a>: allows Python to do store data and do Excel-like manipulations on data</li>
+</ul></li>
+</ul>
+<center>
+<img src="https://cambridgespark.com/assets/images/courses/bootcamp-technology.png" />
+</center>
+<p> </p>
+<ul>
+<li><strong>text editor</strong>: what you’ll be writing your code in (front window, the shell is in the back)</li>
+</ul>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Idle_gui.png" />
+</center>
+<p> </p>
+<p>Second, the installation allows your computer to understand Python code and will set you up with a crappy text editor called IDLE. For our purposes here, we’ll use IDLE. The next section will detail out a couple of better ones you can try :)</p>
+<p>Lastly, if you ever run into an error, there are a TON of resources on the web for help. Your best bet is to google “what does (insert error message here) mean Python?” and you should find an answer. Feel free to also hit up KDA office hours!</p>
 <p> </p>
 </div>
 <div id="text-editors" class="section level3">
 <h3>Text Editors</h3>
 <p>Software editors are often used to write code. They help highlight certain parts of code (SUPER useful), use smart indenting, and basically you should totally be using one and NOT Notepad/Textpad. They also contain super helpful menu commands for changing settings and running code previews.</p>
-<p>There are a few online editors out there that you can try:</p>
+<p>There are a few out there that you can try:</p>
 <ul>
-<li><a href="https://jupyter.org">Jupyter Notebooks (recommended)</a><br />
-</li>
-<li><a href="https://www.katacoda.com/courses/python/playground">Katacoda</a></li>
-<li><a href="http://www.codenvy.com/">Codenvy</a></li>
-<li><a href="https://www.pythonanywhere.com">Python Anywhere</a></li>
-</ul>
-<p>These are great for quick prototyping but aren’t recommended for any serious application.</p>
-<p>Offline editors:</p>
-<ul>
-<li>IDLE (default)</li>
 <li><a href="https://atom.io">Atom (recommended)</a></li>
 <li><a href="https://www.sublimetext.com">Sublime</a></li>
 <li><a href="https://notepad-plus-plus.org">Notepad++</a></li>
 </ul>
-<p>We will use IDLE in class. There are a few really good offline ones out there (listed above) but it really comes down to personal preference. This really won’t matter unless you are thinking about serious</p>
 <p> </p>
 </div>
 <div id="getting-comfortable-with-the-environment" class="section level3">
 <h3>Getting comfortable with the environment</h3>
-<p>Now that you have installed Python, let’s dive in! Open up an IDLE session and let’s get cranking.</p>
-<p>There is a hierarchy for code:</p>
-<ul>
-<li>Programs are composed of modules</li>
-<li>Modules contain statements</li>
-<li>Statements contain expressions</li>
-<li>Expressions create and process objects
-<ul>
-<li>Expressions are the founding blocks of code</li>
-</ul></li>
-</ul>
-<p>Confused yet? Don’t worry this look way easier in code. For the purposes of this session, we will only look at expressions and statements. Try typing the below into your IDLE and run it.</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="st">&#39;Hello World&#39;</span>)</code></pre></div>
+<p>Now that you have installed Python, let’s dive in! Open up a new text file in your brand new spankin’ text editor or IDLE and let’s get cranking.</p>
+<div id="functions" class="section level4">
+<h4>Functions</h4>
+<p>Let’s write your first code. Go ahead and type the following in your editor and click on “Run” (or hit F5).</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="st">&quot;Hello World&quot;</span>)</code></pre></div>
+<p>You should see the following:</p>
 <pre><code>## Hello World</code></pre>
-<p>In that above example, the object is ‘Hello World’. The statement is print(‘Hello World’). Blocks of code that can be called again and again are modules, and a bunch of modules designed to do something is called a program.</p>
-<p>To use another analogy, think about a bakery. You need your baking ingredients like flour, yeast, and water. These are your objects. By putting them into a mixer, you are using a pre-built machine that only does mixing, a statement. You can’t use the mixer to do anything else but mix. It also takes certain things (like baking ingredients). If you try putting other things in there, the mixer won’t mix. Similarly, if you try putting objects into a statement that it doesn’t recognize it will give you an error. More on that later.</p>
-<p>If you think about the entire process of baking a loaf of bread, you need to mix the ingredients, bake them in the oven, and let the loaf cool. This set of activities is repeated over and over again, and the process is the same the entire time. This would be a module, a collection of statements.</p>
-<p>If we think about the act of running a bakery, like marketing, accounting, and sales, that would be like a program. It’s a set of business activities (or coding modules) that are put together! Make sense?</p>
+<p>You have your first program, yay! Functions work like they do in Excel where you type out a function and give it parameters within the (). Notice how we put Hello World in quotes. That’s because it’s considered a string. If you put it in there without quotes, you’ll get an error message…</p>
+<center>
+<img src="http://www.learnpythononline.org/images/python-hello-world-error.JPG" />
+</center>
+<p>Other commonly used functions:</p>
+<ul>
+<li>print(): prints stuff to the screen, duh.</li>
+<li>len(): takes the length of a string or how many things in another thing</li>
+<li>str(): takes an integer and turns it into a string</li>
+<li><a href="https://docs.python.org/2/library/functions.html">all base Python functions</a>: note that these are vanilla Python functions. Once you start installing libraries you will get access to new functions so check the library websites for a list of those and how to use them!</li>
+</ul>
+</div>
+<div id="variables" class="section level4">
+<h4>Variables</h4>
+<p>Think of variables like storage containers. You can save the value of something and recall it later on in your code.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">x <span class="op">=</span> <span class="dv">8</span>
+y <span class="op">=</span> <span class="st">&quot;9&quot;</span>
+z <span class="op">=</span> <span class="dv">1</span>
+
+<span class="bu">print</span>(x <span class="op">+</span> <span class="dv">1</span>)
+<span class="bu">print</span>(x <span class="op">+</span> z <span class="op">*</span> x)
+<span class="bu">print</span>(y)</code></pre></div>
+<pre><code>## 9
+## 16
+## 9</code></pre>
+<p>These work as expected. Go ahead and try to run y + 1…What happens?</p>
+<center>
+<img src="http://v4.software-carpentry.org/python/basics/041.png" />
+</center>
+<p>You should see something very similar to the error message above. Python is very picky about what it takes in. Addition will only work between two integers, which our variables x and z are. If you wanted to add up x and y, you would first have to turn y into an integer.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">x <span class="op">=</span> <span class="dv">8</span>
+y <span class="op">=</span> <span class="st">&quot;9&quot;</span>
+<span class="bu">print</span>(x <span class="op">+</span> <span class="bu">int</span>(y))</code></pre></div>
+<pre><code>## 17</code></pre>
+<p>Bottom line is to pay attention to what types of variables you have and what you are trying to do with them. Lastly, you can choose most words or random characters to be variables. Some words can’t be used as variables because they are saved only for Python use. Make sure you use a variable that makes sense!</p>
+</div>
+<div id="commenting" class="section level4">
+<h4>Commenting</h4>
+<p>Do it.</p>
+</div>
+<div id="data-structures" class="section level4">
+<h4>Data Structures</h4>
+<ul>
+<li>lists: basically it’s a collection of stuff.</li>
+</ul>
+<center>
+<img src="https://www.analyticsvidhya.com/wp-content/uploads/2014/07/python_lists.png" />
+</center>
+</div>
+</div>
+</div>
+<div id="example-problems" class="section level2">
+<h2>Example Problems</h2>
+<div id="university-data" class="section level3">
+<h3>University Data</h3>
+<p>Goals: Libraries:</p>
+<p>Let’s take a look at a dataset, the post-secondary universe survey from 2013 from data.gov.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> sys
+<span class="bu">print</span> sys.version</code></pre></div>
+<pre><code>## 2.7.12 (default, Nov 19 2016, 06:48:10) 
+## [GCC 5.4.0 20160609]</code></pre>
+<!-- ```{python} -->
+<!-- import urllib, pandas as pd -->
+<!-- # we will be using a built in library called urllib, this is typically used to scrape data from the web -->
+<!-- url = 'https://inventory.data.gov/dataset/032e19b4-5a90-41dc-83ff-6e4cd234f565/resource/38625c3d-5388-4c16-a30f-d105432553a4/download/postscndryunivsrvy2013dirinfo.csv' -->
+<!-- # we create a variable that stores the URL of the dataset we are interested in -->
+<!-- fileobj = urllib.urlopen(url) -->
+<!-- # we create another variable named fileobj to store  -->
+<!-- df = pd.read_json(fileobj) -->
+<!-- ``` -->
 </div>
 </div>
 
