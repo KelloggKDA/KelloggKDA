@@ -1,4 +1,5 @@
 name: "KDA-website"
+output_dir: "."
 navbar:
 #  title: "<img id=\"logo\" style=\"position: absolute; top: 0px; left: 390px; width: 150px;\" src=\"logo.png\" />"
 #  title: "Kellogg Data & Analytics Website <img id=\"logo\" style=\"position: absolute; top: 0px; left: 643px; width: 60px;\" src=\"bars.png\" />"
