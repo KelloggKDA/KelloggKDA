@@ -1,0 +1,147 @@
+---
+title: "Welcome to R Workshop Series"
+output: 
+  html_document:
+    theme: lumen
+    highlight: tango
+    toc: true
+    toc_float: 
+      collapsed: true
+      smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+*Last updated 10/24/2017*
+
+***
+
+This site was set up to host the content taught during these sessions and are meant for students for reference or for self-study. It is split into different sessions: 
+
+  * Installation & Orientation
+  * Basics through DataCamp
+  * Importing data 
+  * Data cleansing 
+  * Visualization 
+  * Regression 
+  
+Stay tuned as we add additional sections!  
+
+## Overview
+
+### Why use R?
+
+R is a free, open-source, text-based programming language originally designed for data analysis. Since its introduction, lots of people have added additional software packages to it that expanded its functionality. It can create sexy visualizations, build websites like this one, do advanced machine learning, and more! 
+
+> Another important question for business school students is which language should I choose to learn? R? Python? etc. At this juncture, it doesn't really matter which you learn. What's more important is that you take away the principles and concepts of how these text-based languages work. Once you learn one, you can learn the other very easily. The difference is syntax. 
+
+Lastly, text-based languages are transparent, reproducible, and are editable workflows. It's generally easier to follow a code flow than an Excel or Access file. 
+
+&nbsp; 
+
+## Installation and Orientation
+
+### Installation
+
+You will need to download and setup **two** things to use R. 
+  
+  * [R](https://cran.cnr.berkeley.edu)
+  * [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+  * [*Video Tutorial if you need assistance*](https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=3)
+  
+For the R link, click your OS and click the first link. You'll want to download the main or newest version. For RStudio, you'll want to look under the installers section and click the link for your OS. 
+
+> Why do you need two? R is the software that allows your computer to run and read R code. RStudio is another software package that makes R a lot more user-friendly. It has a graphical interface and a bunch of nice features to make code writing easier. 
+
+&nbsp; 
+
+### Orientation
+
+When you first open RStudio, you should see 4 windows:
+
+![](RStudioGUI.png)
+
+&nbsp; 
+
+  1. Code editor: this is where you'll be typing your code
+  2. Console: this is like your DOS/terminal which will show you code results. You will RARELY be typing into this window. 
+  3. Environment: this shows you what types of variables and libraries (software addins) that you have in your session
+  4. File Window: this shows you the directory of files. 
+  
+The entire interface is customizable, so don't worry if you don't see this exact setup or if you don't like it. The **most important** screens we will be dealing with are the code editor and the console! 
+
+&nbsp; 
+
+### Basics through DataCamp
+
+We **highly recommend** going through the DataCamp course: Introduction to R for Data Science to learn the basics of programming and R. You can find a link to it under the Resources tab up above. It's super intuitive, does a good job teaching the basics, and gives you a follow along environment in your browser that's really helpful.
+
+In it, you'll go over a lot of programming basics that you'll have to know to use more advanced functions in R:
+
+  * operators: how math functions work
+  * variables: how to assign stuff
+  * data types: what types of data can you store in variables
+  * vectors: how to store MULTIPLE data points 
+  
+
+What does a program do and what is a function and what does the logic do?
+
+Good to show example and make interactive
+show win/accomplishment
+need problems & examples
+maybe marry to Excel to show understanding data
+Need to go through the environment (console vs editor), comments, and
+Explanation of head()
+Getting your window back
+Go through the logic of packages/library
+go through process of downloading new libraries
+go through process of loading a library
+When programs are done running (when console is done)
+Parameters for new libraries, how do you know how many it takes?
+Also, what does a data table mean in a parameter?
+One dude wants to get into actually programming for consulting
+Piping, go thru one step at a time
+Office hours for actual practice application of these problems
+Managing question flow for session
+Airline problem might be way too many functions for students to handle, maybe focus on five or six and really drill down into
+Rushing through these functions, need to really step through practice problems
+Regression & Visualization should really be its own session
+Explain that these sessions are meant for teaching code vs. working with professors to work out regression
+ggplot library documentation
+themed libraries
+install packages ‘ggridges’
+tidyverse library documentation
+Session to show what libraries can do, but not necessarily meant to get you to expert level. Have to do practice problems
+Regression
+dummy variables + fixed effects?
+O’Reilly & Visualization R e-book links
+Links to good R teaching sites
+
+## Data cleansing
+
+### Tidyverse
+
+## Data visualization
+
+### ggplot
+
+
+&nbsp; 
+
+## Example Problems
+
+### Data cleansing: NYC Flight Information
+
+Let's take a look at a sample dataset containing flight information. We'll be using the "nycflights13" library so go ahead and make sure that's installed.
+
+```{r}
+library(nycflights13)
+
+head(flights)
+```
+
+Generally it's good practice to do a quick sanity check whenever you have a new dataset. In this case, you can use head(flights) to check out the top 10 rows of this dataset OR you can go ahead and click into the package in the Environment tab and select the flights dataset. Is it loading?
+
+

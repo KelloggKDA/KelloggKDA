@@ -1,0 +1,56 @@
+---
+title: "Resources"
+output: 
+  html_document:
+    theme: lumen
+    highlight: tango
+    toc: true
+    toc_float: 
+      collapsed: true
+      smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+*Last updated 10/26/2017*
+
+***
+
+There are many resources for self-guided study. 
+
+## Stuff
+
+### Northwestern access required
+
+Check these out while you still have Northwestern student privileges! 
+
+  * [Tableau License](https://www.tableau.com/academic/students): FREE for students!
+  * [DataCamp](http://www.it.northwestern.edu/research/campus-events/data-camp.html): Online courses for R, Python, and SQL
+  * [Northwestern R User Group](https://northwestern-r-users.github.io): Lots of good resources for R here! Monthly classroom sessions on rotating topics.
+  * [Northwestern IT Training & Events](http://www.it.northwestern.edu/research/campus-events/index.html): Check back here for live workshops on Python & R
+
+Northwestern also provides free Lynda access! 
+
+  * 
+
+### Cheat Sheets and Reference Guides
+
+Forgot what the command for klincom was? No worries, check out these handy one-pagers with function descriptions!
+
+  * [STATA](https://geocenter.github.io/StataTraining/portfolio/01_resource/)
+  * [R](https://www.rstudio.com/resources/cheatsheets/)
+  * [Python](https://ehmatthes.github.io/pcc/cheatsheets/README.html)
+
+### Excel
+
+### Tableau
+
+  * [Tableau training](https://www.tableau.com/learn/training)
+
+### SQL
+
+### Python
+
+### R

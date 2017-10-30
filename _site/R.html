@@ -11,7 +11,7 @@
 
 
 
-<title>Welcome to Python Workshop Series</title>
+<title>Welcome to R Workshop Series</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -211,7 +211,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = false;
+    options.showAndHide = true;
     options.smoothScroll = false;
 
     // tocify
@@ -274,12 +274,6 @@ div.tocify {
   border-radius: 0px;
 }
 
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
 
 </style>
 
@@ -303,7 +297,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Kellogg Data & Analytics Website <img id="logo" style="position: absolute; top: 0px; left: 643px; width: 60px;" src="bars.png" /></a>
+      <a class="navbar-brand" href="index.html">Kellogg Data & Analytics Website <img src="bars.png" style="position: relative; top: -7px; right: -4px; width: 50px; float: right;" /></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -319,6 +313,9 @@ div.tocify {
 <li>
   <a href="R.html">R Workshop Series</a>
 </li>
+<li>
+  <a href="resources.html">Resources</a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -328,91 +325,117 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Welcome to Python Workshop Series</h1>
+<h1 class="title toc-ignore">Welcome to R Workshop Series</h1>
 
 </div>
 
 
-<p><em>Last updated 10/20/2017</em></p>
+<p><em>Last updated 10/24/2017</em></p>
 <hr />
-<p>This site was set up to host the content taught during these sessions and are meant for students for reference or for self-study. It is split into the following sections:</p>
+<p>This site was set up to host the content taught during these sessions and are meant for students for reference or for self-study. It is split into different sessions:</p>
 <ul>
-<li>Introduction to Python</li>
-<li>Data Visualization</li>
-<li>Machine Learning</li>
-<li>Office Hours &amp; Optimization</li>
+<li>Installation &amp; Orientation</li>
+<li>Basics through DataCamp</li>
+<li>Importing data</li>
+<li>Data cleansing</li>
+<li>Visualization</li>
+<li>Regression</li>
 </ul>
 <p>Stay tuned as we add additional sections!</p>
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<div id="why-use-r" class="section level3">
+<h3>Why use R?</h3>
+<p>R is a free, open-source, text-based programming language originally designed for data analysis. Since its introduction, lots of people have added additional software packages to it that expanded its functionality. It can create sexy visualizations, build websites like this one, do advanced machine learning, and more!</p>
+<blockquote>
+<p>Another important question for business school students is which language should I choose to learn? R? Python? etc. At this juncture, it doesn’t really matter which you learn. What’s more important is that you take away the principles and concepts of how these text-based languages work. Once you learn one, you can learn the other very easily. The difference is syntax.</p>
+</blockquote>
+<p>Lastly, text-based languages are transparent, reproducible, and are editable workflows. It’s generally easier to follow a code flow than an Excel or Access file.</p>
 <p> </p>
-<div id="introduction-to-python" class="section level2">
-<h2>Introduction to Python</h2>
-<div id="what-is-python" class="section level3">
-<h3>What is Python?</h3>
-<p>Python is a high-level, which means it’s easier to read/write than machine code, computer language. It’s a swiss army knife-like tool that is quick to deploy and can be used for all sorts of applications.</p>
-<p>Just a quick laundry list of things I’ve used it for at work:</p>
-<ul>
-<li>Crawling through a network folder constantly</li>
-<li>Generating a report out of XLS and emailing it out to certain people</li>
-</ul>
 </div>
+</div>
+<div id="installation-and-orientation" class="section level2">
+<h2>Installation and Orientation</h2>
 <div id="installation" class="section level3">
 <h3>Installation</h3>
-<p>Before we begin, we have to make sure you have Python installed on your machine.</p>
+<p>You will need to download and setup <strong>two</strong> things to use R.</p>
+<ul>
+<li><a href="https://cran.cnr.berkeley.edu">R</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio</a></li>
+<li><a href="https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=3"><em>Video Tutorial if you need assistance</em></a></li>
+</ul>
+<p>For the R link, click your OS and click the first link. You’ll want to download the main or newest version. For RStudio, you’ll want to look under the installers section and click the link for your OS.</p>
 <blockquote>
-<p>We will use version 2.7 for this entire series. There is a newer 3.X version available, which introduces new functions but <strong>most</strong> applications use Python 2.7.</p>
+<p>Why do you need two? R is the software that allows your computer to run and read R code. RStudio is another software package that makes R a lot more user-friendly. It has a graphical interface and a bunch of nice features to make code writing easier.</p>
 </blockquote>
-<p>You can download Python 2.7 here: (<a href="https://www.python.org/downloads/release/python-2714/" class="uri">https://www.python.org/downloads/release/python-2714/</a>)</p>
-<p>You will need scroll down until they see Files and click to download the package for their system. If you have Mac OS X 10.6 or later, you will need to download the Mac OS X 64-bit/32-bit installer package. If you have Windows, they will need to download the Windows x86-64 MSI installer package.</p>
-<p>I recommend going through the Getting Started page as well. The wiki has a wealth of information if you ever get stuck on something: Python 2.x Wiki: <a href="https://docs.python.org/2.7/" class="uri">https://docs.python.org/2.7/</a></p>
 <p> </p>
 </div>
-<div id="why-python" class="section level3">
-<h3>Why Python?</h3>
-<p>Clean syntax, powerful extensions and libraries (think of this as additional software upgrades). It’s also super easy and iterative to use. Traditional programming languages require you to compile (translate) your code before running it, which takes extra time!</p>
+<div id="orientation" class="section level3">
+<h3>Orientation</h3>
+<p>When you first open RStudio, you should see 4 windows:</p>
+<div class="figure">
+<img src="RStudioGUI.png" />
+
+</div>
+<p> </p>
+<ol style="list-style-type: decimal">
+<li>Code editor: this is where you’ll be typing your code</li>
+<li>Console: this is like your DOS/terminal which will show you code results. You will RARELY be typing into this window.</li>
+<li>Environment: this shows you what types of variables and libraries (software addins) that you have in your session</li>
+<li>File Window: this shows you the directory of files.</li>
+</ol>
+<p>The entire interface is customizable, so don’t worry if you don’t see this exact setup or if you don’t like it. The <strong>most important</strong> screens we will be dealing with are the code editor and the console!</p>
 <p> </p>
 </div>
-<div id="text-editors" class="section level3">
-<h3>Text Editors</h3>
-<p>Software editors are often used to write code. They help highlight certain parts of code (SUPER useful), use smart indenting, and basically you should totally be using one and NOT Notepad/Textpad. They also contain super helpful menu commands for changing settings and running code previews.</p>
-<p>There are a few online editors out there that you can try:</p>
+<div id="basics-through-datacamp" class="section level3">
+<h3>Basics through DataCamp</h3>
+<p>We <strong>highly recommend</strong> going through the DataCamp course: Introduction to R for Data Science to learn the basics of programming and R. You can find a link to it under the Resources tab up above. It’s super intuitive, does a good job teaching the basics, and gives you a follow along environment in your browser that’s really helpful.</p>
+<p>In it, you’ll go over a lot of programming basics that you’ll have to know to use more advanced functions in R:</p>
 <ul>
-<li><a href="https://jupyter.org">Jupyter Notebooks (recommended)</a><br />
-</li>
-<li><a href="https://www.katacoda.com/courses/python/playground">Katacoda</a></li>
-<li><a href="http://www.codenvy.com/">Codenvy</a></li>
-<li><a href="https://www.pythonanywhere.com">Python Anywhere</a></li>
+<li>operators: how math functions work</li>
+<li>variables: how to assign stuff</li>
+<li>data types: what types of data can you store in variables</li>
+<li>vectors: how to store MULTIPLE data points</li>
 </ul>
-<p>These are great for quick prototyping but aren’t recommended for any serious application.</p>
-<p>Offline editors:</p>
-<ul>
-<li>IDLE (default)</li>
-<li><a href="https://atom.io">Atom (recommended)</a></li>
-<li><a href="https://www.sublimetext.com">Sublime</a></li>
-<li><a href="https://notepad-plus-plus.org">Notepad++</a></li>
-</ul>
-<p>We will use IDLE in class. There are a few really good offline ones out there (listed above) but it really comes down to personal preference. This really won’t matter unless you are thinking about serious</p>
+<p>What does a program do and what is a function and what does the logic do?</p>
+<p>Good to show example and make interactive show win/accomplishment need problems &amp; examples maybe marry to Excel to show understanding data Need to go through the environment (console vs editor), comments, and Explanation of head() Getting your window back Go through the logic of packages/library go through process of downloading new libraries go through process of loading a library When programs are done running (when console is done) Parameters for new libraries, how do you know how many it takes? Also, what does a data table mean in a parameter? One dude wants to get into actually programming for consulting Piping, go thru one step at a time Office hours for actual practice application of these problems Managing question flow for session Airline problem might be way too many functions for students to handle, maybe focus on five or six and really drill down into Rushing through these functions, need to really step through practice problems Regression &amp; Visualization should really be its own session Explain that these sessions are meant for teaching code vs. working with professors to work out regression ggplot library documentation themed libraries install packages ‘ggridges’ tidyverse library documentation Session to show what libraries can do, but not necessarily meant to get you to expert level. Have to do practice problems Regression dummy variables + fixed effects? O’Reilly &amp; Visualization R e-book links Links to good R teaching sites</p>
+</div>
+</div>
+<div id="data-cleansing" class="section level2">
+<h2>Data cleansing</h2>
+<div id="tidyverse" class="section level3">
+<h3>Tidyverse</h3>
+</div>
+</div>
+<div id="data-visualization" class="section level2">
+<h2>Data visualization</h2>
+<div id="ggplot" class="section level3">
+<h3>ggplot</h3>
 <p> </p>
 </div>
-<div id="getting-comfortable-with-the-environment" class="section level3">
-<h3>Getting comfortable with the environment</h3>
-<p>Now that you have installed Python, let’s dive in! Open up an IDLE session and let’s get cranking.</p>
-<p>There is a hierarchy for code:</p>
-<ul>
-<li>Programs are composed of modules</li>
-<li>Modules contain statements</li>
-<li>Statements contain expressions</li>
-<li>Expressions create and process objects
-<ul>
-<li>Expressions are the founding blocks of code</li>
-</ul></li>
-</ul>
-<p>Confused yet? Don’t worry this look way easier in code. For the purposes of this session, we will only look at expressions and statements. Try typing the below into your IDLE and run it.</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="st">&#39;Hello World&#39;</span>)</code></pre></div>
-<pre><code>## Hello World</code></pre>
-<p>In that above example, the object is ‘Hello World’. The statement is print(‘Hello World’). Blocks of code that can be called again and again are modules, and a bunch of modules designed to do something is called a program.</p>
-<p>To use another analogy, think about a bakery. You need your baking ingredients like flour, yeast, and water. These are your objects. By putting them into a mixer, you are using a pre-built machine that only does mixing, a statement. You can’t use the mixer to do anything else but mix. It also takes certain things (like baking ingredients). If you try putting other things in there, the mixer won’t mix. Similarly, if you try putting objects into a statement that it doesn’t recognize it will give you an error. More on that later.</p>
-<p>If you think about the entire process of baking a loaf of bread, you need to mix the ingredients, bake them in the oven, and let the loaf cool. This set of activities is repeated over and over again, and the process is the same the entire time. This would be a module, a collection of statements.</p>
-<p>If we think about the act of running a bakery, like marketing, accounting, and sales, that would be like a program. It’s a set of business activities (or coding modules) that are put together! Make sense?</p>
+</div>
+<div id="example-problems" class="section level2">
+<h2>Example Problems</h2>
+<div id="data-cleansing-nyc-flight-information" class="section level3">
+<h3>Data cleansing: NYC Flight Information</h3>
+<p>Let’s take a look at a sample dataset containing flight information. We’ll be using the “nycflights13” library so go ahead and make sure that’s installed.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(nycflights13)
+
+<span class="kw">head</span>(flights)</code></pre></div>
+<pre><code>## # A tibble: 6 x 19
+##    year month   day dep_time sched_dep_time dep_delay arr_time
+##   &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;
+## 1  2013     1     1      517            515         2      830
+## 2  2013     1     1      533            529         4      850
+## 3  2013     1     1      542            540         2      923
+## 4  2013     1     1      544            545        -1     1004
+## 5  2013     1     1      554            600        -6      812
+## 6  2013     1     1      554            558        -4      740
+## # ... with 12 more variables: sched_arr_time &lt;int&gt;, arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;,
+## #   time_hour &lt;dttm&gt;</code></pre>
+<p>Generally it’s good practice to do a quick sanity check whenever you have a new dataset. In this case, you can use head(flights) to check out the top 10 rows of this dataset OR you can go ahead and click into the package in the Environment tab and select the flights dataset. Is it loading?</p>
 </div>
 </div>
 
