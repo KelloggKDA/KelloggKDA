@@ -28,13 +28,10 @@ Stay tuned as we add additional sections!
 
 &nbsp; 
 
-
 ## Introduction to Python
 
 ### What is Python?
 Python is a high-level programming language. It's a swiss army knife-like tool that is quick to deploy and can be used for all sorts of applications. 
-
-&nbsp;
 
 Just a quick laundry list of things it can be used it for at work: 
 

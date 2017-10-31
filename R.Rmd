@@ -116,18 +116,18 @@ file and that you aren't missing data or seeing data that you don't expect. You 
 
 > You may have noticed that there were lines prefaced by the # sign. These are called comments, and are lines that are NOT run and are used for documentation purposes. **Best practice** is to use these AS much as you can. You are aiming for legibility. 
 
-## Data exploration
+<!-- ## Data exploration -->
 
-## Data cleansing
+<!-- ## Data cleansing -->
 
-### Tidyverse
+<!-- ### Tidyverse -->
 
-## Data visualization
+<!-- ## Data visualization -->
 
-### ggplot
+<!-- ### ggplot -->
 
 
-&nbsp; 
+<!-- &nbsp;  -->
 
 <!-- ## Example Problems -->
 
