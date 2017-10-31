@@ -14,7 +14,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-*Last updated 10/24/2017*
+*Last updated 10/31/2017*
 
 ***
 
@@ -23,11 +23,13 @@ This site was set up to host the content taught during these sessions and are me
   * Installation & Orientation
   * Basics through DataCamp
   * Importing data 
-  * Data cleansing 
-  * Visualization 
-  * Regression 
+  * Data cleansing *(coming soon)*
+  * Visualization *(coming soon)*
+  * Regression *(coming soon)*
   
 Stay tuned as we add additional sections!  
+
+&nbsp;
 
 ## Overview
 
@@ -76,7 +78,7 @@ The entire interface is customizable, so don't worry if you don't see this exact
 
 ### Basics through DataCamp
 
-We **highly recommend** going through the DataCamp course: Introduction to R for Data Science to learn the basics of programming and R. You can find a link to it under the Resources tab up above. It's super intuitive, does a good job teaching the basics, and gives you a follow along environment in your browser that's really helpful.
+We **highly recommend** going through the [DataCamp course: Introduction to R for Data Science to learn the basics of programming and R](http://www.it.northwestern.edu/research/campus-events/data-camp.html). You can find a link to it under the Resources tab up above. It's super intuitive, does a good job teaching the basics, and gives you a follow along environment in your browser that's really helpful.
 
 In it, you'll go over a lot of programming basics that you'll have to know to use more advanced functions in R:
 
@@ -84,42 +86,37 @@ In it, you'll go over a lot of programming basics that you'll have to know to us
   * variables: how to assign stuff
   * data types: what types of data can you store in variables
   * vectors: how to store MULTIPLE data points
-  
-HELLO WORLD
-  
 
-What does a program do and what is a function and what does the logic do?
+&nbsp; 
 
-Good to show example and make interactive
-show win/accomplishment
-need problems & examples
-maybe marry to Excel to show understanding data
-Need to go through the environment (console vs editor), comments, and
-Explanation of head()
-Getting your window back
-Go through the logic of packages/library
-go through process of downloading new libraries
-go through process of loading a library
-When programs are done running (when console is done)
-Parameters for new libraries, how do you know how many it takes?
-Also, what does a data table mean in a parameter?
-One dude wants to get into actually programming for consulting
-Piping, go thru one step at a time
-Office hours for actual practice application of these problems
-Managing question flow for session
-Airline problem might be way too many functions for students to handle, maybe focus on five or six and really drill down into
-Rushing through these functions, need to really step through practice problems
-Regression & Visualization should really be its own session
-Explain that these sessions are meant for teaching code vs. working with professors to work out regression
-ggplot library documentation
-themed libraries
-install packages ‘ggridges’
-tidyverse library documentation
-Session to show what libraries can do, but not necessarily meant to get you to expert level. Have to do practice problems
-Regression
-dummy variables + fixed effects?
-O’Reilly & Visualization R e-book links
-Links to good R teaching sites
+## Importing Data
+
+Now that you know the basics, let's get started!
+
+There are two ways to import data. You can either load data in from your computer OR you can download it from the internet. 
+
+### Loading data from your computer
+
+Let's try using a sample dataset. Y'all remember autoparts from DECS-431?! You can download this file here @ xxxxxxx. 
+
+Follow along by typing this into your editor window. You can then run the code by clicking the "Run" button in the Editor window and seeing the results in the Console window. 
+
+```{r}
+df = read.csv(file = "~/KDA_website/data/autoparts.csv")
+# We chose a variable called df but you can really choose anything (df is standard for dataframe).
+# The filename and path for you will be different based on where you save your autoparts file. 
+
+head(df)
+# Head is a function to show the top 6 lines from this dataset.
+# df is the variable name we chose for the autoparts dataset. 
+```
+
+Checking your data is ALWAYS best practice. You want to make sure you are looking at the right
+file and that you aren't missing data or seeing data that you don't expect. You can also check your data by going into the Environment window and clicking on the df variable that is created when you load the data. 
+
+> You may have noticed that there were lines prefaced by the # sign. These are called comments, and are lines that are NOT run and are used for documentation purposes. **Best practice** is to use these AS much as you can. You are aiming for legibility. 
+
+## Data exploration
 
 ## Data cleansing
 
@@ -132,18 +129,18 @@ Links to good R teaching sites
 
 &nbsp; 
 
-## Example Problems
+<!-- ## Example Problems -->
 
-### Data cleansing: NYC Flight Information
+<!-- ### Data cleansing: NYC Flight Information -->
 
-Let's take a look at a sample dataset containing flight information. We'll be using the "nycflights13" library so go ahead and make sure that's installed.
+<!-- Let's take a look at a sample dataset containing flight information. We'll be using the "nycflights13" library so go ahead and make sure that's installed. -->
 
-```{r}
-library(nycflights13)
+<!-- ```{r} -->
+<!-- library(nycflights13) -->
 
-head(flights)
-```
+<!-- head(flights) -->
+<!-- ``` -->
 
-Generally it's good practice to do a quick sanity check whenever you have a new dataset. In this case, you can use head(flights) to check out the top 10 rows of this dataset OR you can go ahead and click into the package in the Environment tab and select the flights dataset. Is it loading?
+<!-- Generally it's good practice to do a quick sanity check whenever you have a new dataset. In this case, you can use head(flights) to check out the top 10 rows of this dataset OR you can go ahead and click into the package in the Environment tab and select the flights dataset. Is it loading? -->
 
 

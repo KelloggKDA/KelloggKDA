@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
 #  title: "<img id=\"logo\" style=\"position: absolute; top: 0px; left: 390px; width: 150px;\" src=\"logo.png\" />"
 #  title: "Kellogg Data & Analytics Website <img id=\"logo\" style=\"position: absolute; top: 0px; left: 643px; width: 60px;\" src=\"bars.png\" />"
-  title: "Kellogg Data & Analytics Website <img src=\"bars.png\" style=\"position: relative; top: -7px; right: -4px; width: 50px; float: right;\" />"
+  title: "Kellogg Data & Analytics Website <img src=\"bars.png\" style=\"position: relative; top: -7px; right: -6px; width: 50px; float: right;\" />"
   right: 
     - text: "Home"
       href: index.html

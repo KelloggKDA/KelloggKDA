@@ -34,10 +34,6 @@ Stay tuned as we add additional sections!
 ### What is Python?
 Python is a high-level programming language. It's a swiss army knife-like tool that is quick to deploy and can be used for all sorts of applications. 
 
-<center>
-![](http://s2.quickmeme.com/img/c1/c18763cc00aaebf5ca42bbb5b88922b9ab4fd759e06ae3f1b8b460151eaf0f94.jpg)
-</center>
-
 &nbsp;
 
 Just a quick laundry list of things it can be used it for at work: 
@@ -47,7 +43,6 @@ Just a quick laundry list of things it can be used it for at work:
   * And of course, analytics! 
 
 &nbsp; 
-
 
 ### Why Python vs. Excel/Tableau/SQL? 
 
@@ -126,93 +121,31 @@ There are a few out there that you can try:
    
 &nbsp;
 
+### Basics through DataCamp
 
-### Getting comfortable with the environment
+We **highly recommend** going through the DataCamp course: Introduction to Python for Data Science to learn the basics of programming and Python. You can find a link to it under the Resources tab up above. It's super intuitive, does a good job teaching the basics, and gives you a follow along environment in your browser that's really helpful.
 
-Now that you have installed Python, let's dive in! Open up a new text file in your brand new spankin' text editor or IDLE and let's get cranking.
+In it, you'll go over a lot of programming basics that you'll have to know to use more advanced functions in Python:
 
-#### Functions
+  * operators: how math functions work
+  * variables: how to assign stuff
+  * data types: what types of data can you store in variables
+  * lists: how to store MULTIPLE data points
 
-Let's write your first code. Go ahead and type the following in your editor and click on "Run" (or hit F5). 
 
-```{python, results='hide'}
-print("Hello World")
-```
+<!-- ## Example Problems -->
 
-You should see the following:
+<!-- ### University Data -->
 
-```{python, echo=FALSE}
-print("Hello World")
-```
+<!-- Goals:  -->
+<!-- Libraries:  -->
 
-You have your first program, yay! Functions work like they do in Excel where you type out a function and give it parameters within the (). Notice how we put Hello World in quotes. That's because it's considered a string. If you put it in there without quotes, you'll get an error message...
+<!-- Let's take a look at a dataset, the post-secondary universe survey from 2013 from data.gov.  -->
 
-<center>
-![](http://www.learnpythononline.org/images/python-hello-world-error.JPG)
-</center>
-
-Other commonly used functions:
-
-  * print(): prints stuff to the screen, duh. 
-  * len(): takes the length of a string or how many things in another thing
-  * str(): takes an integer and turns it into a string
-  * [all base Python functions](https://docs.python.org/2/library/functions.html): note that these are vanilla Python functions. Once you start installing libraries you will get access to new functions so check the library websites for a list of those and how to use them!
-  
-#### Variables
-
-Think of variables like storage containers. You can save the value of something and recall it later on in your code. 
-
-```{python}
-x = 8
-y = "9"
-z = 1
-
-print(x + 1)
-print(x + z * x)
-print(y)
-```
-
-These work as expected. Go ahead and try to run y + 1...What happens?
-
-<center>
-![](http://v4.software-carpentry.org/python/basics/041.png)
-</center>
-
-You should see something very similar to the error message above. Python is very picky about what it takes in. Addition will only work between two integers, which our variables x and z are. If you wanted to add up x and y, you would first have to turn y into an integer. 
-
-```{python}
-x = 8
-y = "9"
-print(x + int(y))
-```
-
-Bottom line is to pay attention to what types of variables you have and what you are trying to do with them. Lastly, you can choose most words or random characters to be variables. Some words can't be used as variables because they are saved only for Python use. Make sure you use a variable that makes sense! 
-
-#### Commenting
-
-Do it.
-
-#### Data Structures
-
-  * lists: basically it's a collection of stuff. 
-  
-<center>
-![](https://www.analyticsvidhya.com/wp-content/uploads/2014/07/python_lists.png)
-</center>
-
-## Example Problems
-
-### University Data
-
-Goals: 
-Libraries: 
-
-Let's take a look at a dataset, the post-secondary universe survey from 2013 from data.gov. 
-
-```{python}
-import sys
-print sys.version
-```
+<!-- ```{python} -->
+<!-- import sys -->
+<!-- print sys.version -->
+<!-- ``` -->
 
 <!-- ```{python} -->
 <!-- import urllib, pandas as pd -->
