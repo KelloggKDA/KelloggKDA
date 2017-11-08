@@ -56,6 +56,8 @@ The best way to learn is to follow other peoples' work. Furthermore, there are S
 ## Analytics Best Practice
 
   * [Charting](https://medium.com/towards-data-science/the-dos-and-don-ts-of-chart-making-13c629456027)
+  * [Google Style Guide for R](https://google.github.io/styleguide/Rguide.xml): Because you are producing code for others to see, you should make sure that it is readable. This means adding plenty of comments to your code to explain what you are doing and following style guidelines.
+  * [Google Style Guide for Python](https://google.github.io/styleguide/pyguide.html): Because you are producing code for others to see, you should make sure that it is readable. This means adding plenty of comments to your code to explain what you are doing and following style guidelines.
 
 ## Specific Tool Training 
 
@@ -64,16 +66,24 @@ You'll generally find basic training under the Lynda or DataCamp links, but we'l
 ### Excel
 
   * [Chandoo](https://chandoo.org/wp/): Learn to become an Excel ninja! This site aggregates cool, advanced visualization techniques and programming in Excel. 
+  * [Everything by Jorge Camoes](https://excelcharts.com/author/jorge-camoes/): This guy is an excel viz ninja. Check out his stuff! 
 
 ### Tableau
 
   * [Tableau training](https://www.tableau.com/learn/training)
+  * [Tristan Guillevin](https://public.tableau.com/profile/guillevin#!/): This guy won the most recent Tableau viz competition! 
 
 <!-- ### SQL -->
 
-<!-- ### Python -->
+### Python
+
+#### Visualization
+
+  * [The Ultimate Python Seaborn Tutorial: Gotta Catch ‘Em All](https://elitedatascience.com/python-seaborn-tutorial): Seaborn is an interface for matplotlib that arguably makes your visuals 10x better.
 
 ### R
+
+  * [swirl](http://swirlstats.com/): swirl is actually a package in R that teaches you how to program and fundamentals of data science within your console. If you want to learn R, or even brush up on your skills, try it out.
 
 #### ggplot
   
@@ -87,6 +97,8 @@ ggplot isi the de-facto charting library for programming languages (you'll also 
 Tidyverse is a collection of libraries for R designed for data science. It's a heavily used library and you should definitely be familiar with it. 
 
   *[Official site](https://www.tidyverse.org)
+  
+  [An introduction to data cleaning with R](https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf)
 
 #### Other
   
