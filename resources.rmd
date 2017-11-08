@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ***
 
-There are many resources for self-guided study. Check back here for updates!
+There are many resources for self-guided study. Check back here for updates! If you have suggestions or recommendations, please reach out to kda-club@kellogg.northwestern.edu
 
 ## Stats Refreshers
 
@@ -56,6 +56,12 @@ The best way to learn is to follow other peoples' work. Furthermore, there are S
 ## Analytics Best Practice
 
   * [Charting](https://medium.com/towards-data-science/the-dos-and-don-ts-of-chart-making-13c629456027)
+  
+## Analytics Blogs and Newsletters
+
+* [FiveThirtyEight.com](http://fivethirtyeight.com/)
+* [Infogram Data Visualizations](https://infogram.com/blog/category/data-visualization/)
+* [MachineLearnings](https://machinelearnings.co/)
 
 ## Specific Tool Training 
 
@@ -66,14 +72,33 @@ You'll generally find basic training under the Lynda or DataCamp links, but we'l
   * [Chandoo](https://chandoo.org/wp/): Learn to become an Excel ninja! This site aggregates cool, advanced visualization techniques and programming in Excel. 
 
 ### Tableau
+All students have access to a free year of Tableau under their academic license
+
+* [Free Tableau Download for Students](https://www.tableau.com/academic/students)
+
+Tableau offers an amazing array of self-guided lessons and tutorials for new and advanced users of the tool
 
   * [Tableau training](https://www.tableau.com/learn/training)
 
-<!-- ### SQL -->
+### SQL
+SQL is the basic tool used to grab and analyze data from traditional databases. Some resources to get you up to speed quickly
+
+* [Learn SQL | Codecademy](https://www.codecademy.com/learn/learn-sql)
+* [Managing Big Data with MySQL | Coursera](https://www.coursera.org/learn/analytics-mysql)
 
 <!-- ### Python -->
 
 ### R
+#### Getting Started
+R is a free, open source tool available for data scientists, business analysts, and everyone in between. You'll need two things to get started:
+1) [Download R](https://cran.rstudio.com/) - this is the core package that will let you run and test R packages
+2) [Download R Studio](https://www.rstudio.com/products/rstudio/download/#download) - this is a great user interface to R that makes it easier to quickly test and deploy R scripts
+
+#### General Resources
+These are some recommended resources in order to quickly self-learn and get up to speed:
+
+* [CodeSchool R Tutorial](https://www.codeschool.com/courses/try-r) : An online interactive tutorial that requires no downloads and will walk you through the basics of data analysis in R. Great for beginners and people completely new to the tool.
+* [R for Data Science](http://r4ds.had.co.nz/index.html): A complete online book about using R for data science. This covers all the basics of data science, as well as providing complete examples and demos
 
 #### ggplot
   
@@ -93,4 +118,6 @@ Tidyverse is a collection of libraries for R designed for data science. It's a h
   * [Correlation Matrix](http://www.sthda.com/english/wiki/correlation-matrix-a-quick-start-guide-to-analyze-format-and-visualize-a-correlation-matrix-using-r-software)
   * [Correlation cont](http://www.sthda.com/english/wiki/visualize-correlation-matrix-using-correlogram)
   * [Clustering](http://www.sthda.com/english/articles/25-cluster-analysis-in-r-practical-guide/111-types-of-clustering-methods-overview-and-quick-start-r-code/)
+  
+
   
