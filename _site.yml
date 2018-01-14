@@ -6,7 +6,7 @@ navbar:
   title: "Kellogg Data & Analytics Website <img src=\"bars.png\" style=\"position: relative; top: -7px; right: -6px; width: 50px; float: right;\" />"
   right: 
     - text: "Home"
-      href: index.html
+      href: https://kellogg.campusgroups.com/kda/home/
     - text: "Python Workshop Series"
       href: python.html
     - text: "R Workshop Series"
