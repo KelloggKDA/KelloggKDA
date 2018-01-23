@@ -87,6 +87,7 @@ Tableau offers an amazing array of self-guided lessons and tutorials for new and
 ### SQL
 SQL is the basic tool used to grab and analyze data from traditional databases. Some resources to get you up to speed quickly
 
+* [DataWorld SQL](https://data.world/classrooms/guide-to-data-analysis-with-sql-and-datadotworld)
 * [Learn SQL | Codecademy](https://www.codecademy.com/learn/learn-sql)
 * [Managing Big Data with MySQL | Coursera](https://www.coursera.org/learn/analytics-mysql)
 
