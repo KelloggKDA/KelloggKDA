@@ -5,11 +5,7 @@ navbar:
 #  title: "Kellogg Data & Analytics Website <img id=\"logo\" style=\"position: absolute; top: 0px; left: 643px; width: 60px;\" src=\"bars.png\" />"
   title: "Kellogg Data & Analytics Website <img src=\"bars.png\" style=\"position: relative; top: -7px; right: -6px; width: 50px; float: right;\" />"
   right: 
-    - text: "Back to Kellogg CampusGroups"
-      href: https://kellogg.campusgroups.com/kda/home/
-    - text: "Python Workshop Series"
-      href: python.html
-    - text: "R Workshop Series"
-      href: R.html
     - text: "Resources"
       href: resources.html
+    - text: "Back to Kellogg CampusGroups"
+      href: https://kellogg.campusgroups.com/kda/home/

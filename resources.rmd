@@ -14,18 +14,19 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-*Last updated 10/31/2017*
+*Last updated 01/26/2018*
 
 ***
 
-There are many resources for self-guided study. Check back here for updates! If you have suggestions or recommendations, please reach out to kda-club@kellogg.northwestern.edu
+If you have suggestions or recommendations, please reach out to kda-club@kellogg.northwestern.edu
 
 ## Stats Refreshers
 
 Because DECS-430/431 was so long ago...
 
-  * [Linear Regression](http://setosa.io/ev/ordinary-least-squares-regression/): cool, beautiful site that explains linear regression and ordinary least squared estimates! They have other awesome explanations but for really wonky statistical stuff (aside from PCA).
+
   * [Linear & Logistic Regression](http://r-statistics.co/Linear-Regression.html): good, general statistics knowledge
+  * [Linear Regression 3 Part Blog Post](https://dziganto.github.io/data%20science/linear%20regression/machine%20learning/python/Linear-Regression-101-Basics/)
 
 ## Northwestern Resources
 
@@ -35,7 +36,6 @@ NU access required - check these out while you still have Northwestern student p
   * [DataCamp](http://www.it.northwestern.edu/research/campus-events/data-camp.html): AWESOME online courses for R, Python, and SQL. HIGHLY recommended for the programming basics and has stuff for more advanced topics. Follow the instructions from this NU site to get access to the advanced topics. Access has to be refreshed on a quarterly basis. 
   * [Northwestern R User Group](https://northwestern-r-users.github.io): Lots of good resources for R here from all the NU programs. Monthly classroom sessions on rotating topics. Sign up for the list-serve to get notifications. 
   * [Northwestern IT Training & Events](http://www.it.northwestern.edu/research/campus-events/index.html): Check back here for live workshops on Python & R
-  * [Lynda](http://www.northwestern.edu/hr/workplace-learning/lynda/): Follow instructions at this link to get access to Lynda, a platform where instructors host video trainings (think Udemy, Udacity, and Khanh Academy)
 
 ## Cheat Sheets
 
@@ -75,21 +75,15 @@ You'll generally find basic training under the Lynda or DataCamp links, but we'l
   * [Everything by Jorge Camoes](https://excelcharts.com/author/jorge-camoes/): This guy is an excel viz ninja. Check out his stuff! 
 
 ### Tableau
-All students have access to a free year of Tableau under their academic license
-
-* [Free Tableau Download for Students](https://www.tableau.com/academic/students)
-
 Tableau offers an amazing array of self-guided lessons and tutorials for new and advanced users of the tool
 
   * [Tableau training](https://www.tableau.com/learn/training)
-  * [Tristan Guillevin](https://public.tableau.com/profile/guillevin#!/): This guy won the most recent Tableau viz competition! 
 
 ### SQL
 SQL is the basic tool used to grab and analyze data from traditional databases. Some resources to get you up to speed quickly
 
-* [DataWorld SQL](https://data.world/classrooms/guide-to-data-analysis-with-sql-and-datadotworld)
+* [DataWorld SQL](https://data.world/classrooms/guide-to-data-analysis-with-sql-and-datadotworld): Great basic tutorial as well as an interactive environment to practice.
 * [Learn SQL | Codecademy](https://www.codecademy.com/learn/learn-sql)
-* [Managing Big Data with MySQL | Coursera](https://www.coursera.org/learn/analytics-mysql)
 
 ### Python
 
@@ -110,20 +104,6 @@ These are some recommended resources in order to quickly self-learn and get up t
   * [R for Data Science](http://r4ds.had.co.nz/index.html): A complete online book about using R for data science. This covers all the basics of data science, as well as providing complete examples and demos
   * [swirl](http://swirlstats.com/): swirl is actually a package in R that teaches you how to program and fundamentals of data science within your console. If you want to learn R, or even brush up on your skills, try it out.
 
-#### ggplot
-  
-ggplot isi the de-facto charting library for programming languages (you'll also find it for Python). It stands for Grammar of Graphics and is a way of creating pretty charts.   
-  
-  * [Official site](http://www.r-graph-gallery.com/portfolio/ggplot2-package/)
-  * [ggplot tutorials](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html): 
-
-#### Tidyverse
-
-Tidyverse is a collection of libraries for R designed for data science. It's a heavily used library and you should definitely be familiar with it. 
-
-  *[Official site](https://www.tidyverse.org)
-  
-  [An introduction to data cleaning with R](https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf)
 
 #### Other
   
