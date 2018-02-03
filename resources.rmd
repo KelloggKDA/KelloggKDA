@@ -14,102 +14,36 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-*Last updated 01/26/2018*
+*Last updated 02/03/2018*
 
 ***
 
 If you have suggestions or recommendations, please reach out to kda-club@kellogg.northwestern.edu
 
-## Stats Refreshers
+## Essential Analytical Concepts
 
-Because DECS-430/431 was so long ago...
+####Data Storytelling
+
+  * [Harvard Business Review on Data Storytelling](https://hbr.org/2013/04/how-to-tell-a-story-with-data): high-level introduction to data storytelling
+  * [Tableau Data Storytelling White Paper](https://www.tableau.com/sites/default/files/whitepapers/whitepaper_best-practices_telling_great_stories.pdf?signin=8073eedb22fc0a5ae7f82ecf4f280b9): detailed overview of best practices for data storytelling
+  * [FiveThirtyEight](http://fivethirtyeight.com/): popular example of data journalism
 
 
-  * [Linear & Logistic Regression](http://r-statistics.co/Linear-Regression.html): good, general statistics knowledge
-  * [Linear Regression 3 Part Blog Post](https://dziganto.github.io/data%20science/linear%20regression/machine%20learning/python/Linear-Regression-101-Basics/)
-
-## Northwestern Resources
-
-NU access required - check these out while you still have Northwestern student privileges! 
+####Data Visualization
 
   * [Tableau License](https://www.tableau.com/academic/students): FREE Tableau license for students!
-  * [DataCamp](http://www.it.northwestern.edu/research/campus-events/data-camp.html): AWESOME online courses for R, Python, and SQL. HIGHLY recommended for the programming basics and has stuff for more advanced topics. Follow the instructions from this NU site to get access to the advanced topics. Access has to be refreshed on a quarterly basis. 
-  * [Northwestern R User Group](https://northwestern-r-users.github.io): Lots of good resources for R here from all the NU programs. Monthly classroom sessions on rotating topics. Sign up for the list-serve to get notifications. 
-  * [Northwestern IT Training & Events](http://www.it.northwestern.edu/research/campus-events/index.html): Check back here for live workshops on Python & R
-
-## Cheat Sheets
-
-Forgot what the command for klincom was? No worries, check out these handy one-pagers with function descriptions!
-
-  * [STATA](https://geocenter.github.io/StataTraining/portfolio/01_resource/)
-  * [R](https://www.rstudio.com/resources/cheatsheets/)
-  * [Python](https://ehmatthes.github.io/pcc/cheatsheets/README.html)
-  * [Numpy, Pandas, Keras, & MatPlotLib for Python](https://medium.com/towards-data-science/top-6-cheat-sheets-novice-machine-engineers-need-5ea43d1be3de)
-
-## Example Problems and Walkthroughs
-
-The best way to learn is to follow other peoples' work. Furthermore, there are SO many ways to do the same thing, and sometimes this is the best way to pick up new techniques. 
-
-  * [Linear Regression in Python for Bay Area Home Prices](https://medium.com/towards-data-science/linear-regression-in-python-predict-the-bay-areas-home-price-5c91c8378878)
-  * [Exploring Toronto Crime Data in Python](https://medium.com/towards-data-science/exploring-clustering-and-mapping-torontos-crimes-96336efe490f)
-
-## Analytics Best Practice
-
-  * [Charting](https://medium.com/towards-data-science/the-dos-and-don-ts-of-chart-making-13c629456027)
-  * [Google Style Guide for R](https://google.github.io/styleguide/Rguide.xml): Because you are producing code for others to see, you should make sure that it is readable. This means adding plenty of comments to your code to explain what you are doing and following style guidelines.
-  * [Google Style Guide for Python](https://google.github.io/styleguide/pyguide.html): Because you are producing code for others to see, you should make sure that it is readable. This means adding plenty of comments to your code to explain what you are doing and following style guidelines.
-
-## Analytics Blogs and Newsletters
-
-* [FiveThirtyEight.com](http://fivethirtyeight.com/)
-* [Infogram Data Visualizations](https://infogram.com/blog/category/data-visualization/)
-* [MachineLearnings](https://machinelearnings.co/)
-
-## Specific Tool Training 
-
-You'll generally find basic training under the Lynda or DataCamp links, but we'll post tool-specific trainings in this section.
-
-### Excel
-
-  * [Chandoo](https://chandoo.org/wp/): Learn to become an Excel ninja! This site aggregates cool, advanced visualization techniques and programming in Excel. 
-  * [Everything by Jorge Camoes](https://excelcharts.com/author/jorge-camoes/): This guy is an excel viz ninja. Check out his stuff! 
-
-### Tableau
-Tableau offers an amazing array of self-guided lessons and tutorials for new and advanced users of the tool
-
-  * [Tableau training](https://www.tableau.com/learn/training)
-
-### SQL
-SQL is the basic tool used to grab and analyze data from traditional databases. Some resources to get you up to speed quickly
-
-* [DataWorld SQL](https://data.world/classrooms/guide-to-data-analysis-with-sql-and-datadotworld): Great basic tutorial as well as an interactive environment to practice.
-* [Learn SQL | Codecademy](https://www.codecademy.com/learn/learn-sql)
-
-### Python
-
-#### Visualization
-
-  * [The Ultimate Python Seaborn Tutorial: Gotta Catch ‘Em All](https://elitedatascience.com/python-seaborn-tutorial): Seaborn is an interface for matplotlib that arguably makes your visuals 10x better.
-
-### R
-#### Getting Started
-R is a free, open source tool available for data scientists, business analysts, and everyone in between. You'll need two things to get started:
-  * [Download R](https://cran.rstudio.com/): this is the core package that will let you run and test R packages
-  * [Download R Studio](https://www.rstudio.com/products/rstudio/download/#download): this is a great user interface to R that makes it easier to quickly test and deploy R scripts
-
-#### General Resources
-These are some recommended resources in order to quickly self-learn and get up to speed:
-
-  * [CodeSchool R Tutorial](https://www.codeschool.com/courses/try-r) : An online interactive tutorial that requires no downloads and will walk you through the basics of data analysis in R. Great for beginners and people completely new to the tool.
-  * [R for Data Science](http://r4ds.had.co.nz/index.html): A complete online book about using R for data science. This covers all the basics of data science, as well as providing complete examples and demos
-  * [swirl](http://swirlstats.com/): swirl is actually a package in R that teaches you how to program and fundamentals of data science within your console. If you want to learn R, or even brush up on your skills, try it out.
+  * [Data Visualization Best Practices](https://medium.com/towards-data-science/the-dos-and-don-ts-of-chart-making-13c629456027): how to design great charts and visuals
+  * [Flowing Data](http://flowingdata.com/): data visualization blog for inspiration
 
 
-#### Other
-  
-  * [Correlation Matrix](http://www.sthda.com/english/wiki/correlation-matrix-a-quick-start-guide-to-analyze-format-and-visualize-a-correlation-matrix-using-r-software)
-  * [Correlation cont](http://www.sthda.com/english/wiki/visualize-correlation-matrix-using-correlogram)
-  * [Clustering](http://www.sthda.com/english/articles/25-cluster-analysis-in-r-practical-guide/111-types-of-clustering-methods-overview-and-quick-start-r-code/)
-  
+####Descriptive and Inferential Statistics
 
-  
+  * [Laerd Stats Introduction](https://statistics.laerd.com/statistical-guides/descriptive-inferential-statistics.php): defining the difference between descriptive and inferential statistics
+  * [Descriptive Stats](https://www.investopedia.com/terms/d/descriptive_statistics.asp): more on descriptive statistics
+  * [Inferential Stats](http://my.fit.edu/~gabrenya/IntroMethods/eBook/inferentials.pdf): more on inferential statistics
+
+
+####Linear Regression (because DECS-430/431 was so long ago...)
+
+  * [Investopedia on Linear Regression](https://www.investopedia.com/articles/financial-theory/09/regression-analysis-basics-business.asp): basic introduction to linear regression for business analysts
+  * [Khan Academy on Linear Regression](https://www.youtube.com/watch?v=yMgFHbjbAW8): basic introduction for those who don't like reading
