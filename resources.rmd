@@ -1,5 +1,5 @@
 ---
-title: "More Resources"
+title: "Data Analytics Resources"
 output: 
   html_document:
     theme: lumen
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ***
 
-If you have suggestions or recommendations, please reach out to kda-club@kellogg.northwestern.edu
+We've compiled some useful links to supplement your analytics courses at Kellogg. Check back regularly to get updates. Also, if you have suggestions or recommendations, please reach out to kda-club@kellogg.northwestern.edu!
 
 ## Essential Analytical Concepts
 
